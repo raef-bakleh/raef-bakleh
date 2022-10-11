@@ -1,0 +1,3 @@
+- Hey👋, I am Raef Bakleh
+- Currently Learning Web Development
+- You can reach out to me via email bakleh.raef@gmail.com
