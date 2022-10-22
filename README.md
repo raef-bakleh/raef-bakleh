@@ -35,7 +35,7 @@ I have experience and feel comfortable working with these:
 - ![LaTeX](https://img.shields.io/badge/latex-%23008080.svg?style=for-the-badge&logo=latex&logoColor=white)
 
 ---
-<img align="right" src="/learning.png" width="200" height="200" /> 
+<img align="right" src="./Learning.png" width="200" height="200" /> 
 # Currently learning 📚 #
 
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
