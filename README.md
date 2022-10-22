@@ -13,3 +13,4 @@ const raef = {
   interests: ['coffee', 'gym', food'],
 };
 ```
+<img align="right" src="./Hi.png" width="200" height="200" /> 
