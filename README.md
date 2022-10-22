@@ -1,3 +1,5 @@
+<img  align="left" src="./Hi.png" width="200" height="200" /> 
+
 # Hey👋, Welcome to my github!#
 
 - I am Raef Bakleh
@@ -13,4 +15,4 @@ const raef = {
   interests: ['coffee', 'gym', food'],
 };
 ```
-<img  align="left" src="./Hi.png" width="200" height="200" /> 
+
