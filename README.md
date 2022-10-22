@@ -12,7 +12,7 @@ const raef = {
   age: 25,
   studying: 'computer science ',
   institution: 'Ludwig Maximilians University',
-  interests: ['coffee', 'gym', food'],
+  interests: ['coffee', 'gym', 'food'],
 };
 ```
 
