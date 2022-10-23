@@ -2,13 +2,7 @@
 
 # Hey👋, Welcome to my github!#
 
-- I am Raef Bakleh
-- Currently Learning Web Development
-- You can reach out to me via email bakleh.raef@gmail.com
 
-```javascript
-const raef = {<img align="right" src="./Hi.png" width="200" height="200" /> 
-# Hey👋, Welcome to my github!#
 
 - I am Raef Bakleh
 - Currently Learning Web Development
