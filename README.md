@@ -9,7 +9,7 @@
 - You can reach out to me via email bakleh.raef@gmail.com
 
 ```javascript
-const raef = {
+var raef = {
   name: 'Raef Bakleh',
   age: 25,
   studying: 'computer science ',
