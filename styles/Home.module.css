@@ -1,0 +1,382 @@
+@media (max-width: 1040px) {
+
+  .image {
+    width: 400px;
+    height: 400px;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+
+  .leftContainer {
+    position: relative;
+    float: none;
+    clear: none;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    transition: all 1s ease;
+  }
+
+  .leftScroll {
+    position: relative;
+    float: none;
+    clear: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    transition: 1s ease;
+  }
+  .rightContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    transition: none;
+
+  }
+
+  .rightScoll {
+    display: flex;
+    width: 100%;
+    min-height: 100%;
+    justify-content: center;
+  }
+
+  .imgWrapper {
+    margin-top: 50px;
+  }
+  .longBox {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: fit-content;
+    padding: 10px 30px;
+  }
+
+  .longBoxScroll {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: fit-content;
+    padding: 10px;
+  }
+  .wideBox {
+    border: 1px solid yellow;
+    padding: 20px 10px;
+    margin: -20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    justify-content: center;
+    text-align: center;
+  }
+  .wideBoxScroll {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+  }
+  .changedTitle {
+    border-width: 0 1px 0 1px;
+    border-color: #ddd;
+    font-size: 23px;
+    vertical-align: baseline;
+    width: 100%;
+    height: auto;
+  }
+  .changedTitle::before {
+    content: "[";
+    color: green;
+    animation: opacity 3s infinite;
+    font-size: 35px;
+    padding-right: 5px;
+  }
+  .changedTitle::after {
+    content: "]";
+    color: green;
+    animation: opacity 3s infinite;
+    font-size: 35px;
+    padding-left: 5px;
+  }
+
+  .line {
+    position: relative;
+    top: 50%;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+      blinkTextCursor 500ms steps(44) infinite normal;
+  }
+  
+}
+@media (min-width: 1040px) {
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .leftContainer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    float: none;
+    clear: none;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    transition: all 1s ease;
+  }
+
+  .leftScroll {
+    height: 100%;
+    width: 68%;
+    transition: all 1s ease;
+  }
+  .rightContainer {
+    position: fixed;
+    display: flex;
+    width: 50%;
+    min-height: 100vh;
+    justify-content: center;
+    border-left: 2px solid rgba(255, 255, 255, 0.2);
+    transition: all 1s ease;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .rightScoll {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    width: 32%;
+    display: flex;
+    justify-content: center;
+    border-left: solid white;
+    transition: all 1s ease-out;
+    border-left: 2px solid rgba(255, 255, 255, 0.2);
+  }
+  .rightContainer .image {
+    width: auto;
+    height: 400px;
+    box-sizing: border-box;
+  }
+  .rightScoll .image {
+    width: auto;
+    height: 200px;
+    box-sizing: border-box;
+  }
+  .rightContainer > .imgWrapper {
+    width: 80%;
+    height: 900px;
+
+    margin-top: 50px;
+
+    transform: none;
+  }
+
+  .rightScoll .imgWrapper {
+    width: 70%;
+    margin-top: 100px;
+    height: 700px;
+  }
+  .longBox {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 30px;
+    box-sizing: border-box;
+  }
+
+  .longBoxScroll {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .wideBox {
+    border: 1px solid yellow;
+    padding: 20px 10px;
+    margin: -20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .wideBoxScroll {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .rightContainer .changedTitle {
+    border-width: 0 1px 0 1px;
+    border-color: #ddd;
+    font-size: 23px;
+    vertical-align: baseline;
+    width: 100%;
+    height: auto;
+  }
+  .rightScoll .changedTitle {
+    border-width: 0 1px 0 1px;
+    border-color: #ddd;
+    font-size: 13px;
+    vertical-align: baseline;
+    width: 100%;
+    height: auto;
+  }
+  .rightContainer .changedTitle::before {
+    content: "[";
+    color: green;
+    animation: opacity 3s infinite;
+    font-size: 35px;
+    padding-right: 5px;
+  }
+  .rightScoll .changedTitle::before {
+    content: "[";
+    color: green;
+    animation: opacity 3s infinite;
+    font-size: 20px;
+    padding-right: 5px;
+  }
+  .rightContainer .changedTitle::after {
+    content: "]";
+    color: green;
+    animation: opacity 3s infinite;
+    font-size: 35px;
+    padding-left: 5px;
+  }
+  .rightScoll .changedTitle::after {
+    content: "]";
+    color: green;
+    animation: opacity 3s infinite;
+    font-size: 20px;
+    padding-left: 5px;
+  }
+
+  .line {
+    position: relative;
+    top: 50%;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+      blinkTextCursor 500ms steps(44) infinite normal;
+  }
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 24em;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+@keyframes slide {
+  100% {
+    left: 0;
+  }
+}

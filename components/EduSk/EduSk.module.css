@@ -1,0 +1,95 @@
+.section {
+  padding: 0px 70px;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+.eduSk {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.filter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  gap: 20px;
+}
+.line {
+  width: 40px;
+  height: 2px;
+  content: "";
+  color: white;
+  background-color: white;
+}
+.choose {
+  cursor: pointer;
+  font-size: 35px;
+}
+.choose:focus {
+  color: red;
+}
+.clicked {
+  color: orange;
+  text-decoration: underline;
+}
+.education {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: slideUp 0.5s ease-in-out forwards;
+}
+
+.educationElement {
+  box-sizing: border-box;
+
+  background-color: #181715;
+  justify-content: center;
+  padding: 30px;
+}
+.skills {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  animation: expand 0.5s ease-in-out forwards;
+}
+.skills ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  animation: expand 0.5s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(500px) scale(0.2);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
+@keyframes slideUp {
+  0% {
+    transform: translateY(300px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes expand {
+  0% {
+    transform: translateX(700px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
