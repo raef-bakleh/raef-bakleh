@@ -162,22 +162,19 @@
     color: aliceblue;
   }
 
-  .listElement:hover{
-color:#96754e ;    
+  .listElement:hover {
+    color: #96754e;
   }
-.link{
-  text-decoration: none;
-}
-.link:hover{
-  color: orange;
-}
+  .link {
+    text-decoration: none;
+  }
+
   .social {
     display: flex;
     flex-direction: row;
     gap: 25px;
     position: relative;
     top: 40px;
-
   }
   .socialIcons {
     color: rgb(44, 43, 43);
@@ -354,6 +351,12 @@ color:#96754e ;
     transform: translateX(0);
     opacity: 1;
     font-size: 30px;
+  }
+  .listElement:hover {
+    color: #96754e;
+  }
+  .link {
+    text-decoration: none;
   }
   .social {
     display: flex;
