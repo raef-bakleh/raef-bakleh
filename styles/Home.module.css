@@ -1,5 +1,4 @@
-@media (max-width: 1040px) {
-
+@media (max-width: 500px) {
   .image {
     width: 400px;
     height: 400px;
@@ -10,18 +9,15 @@
     gap: 10px;
     float: left;
     clear: both;
-    
   }
 
   .leftContainer {
     position: relative;
     float: none;
     clear: none;
-    padding: 20px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 20px;
     transition: all 1s ease;
   }
 
@@ -32,7 +28,6 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 20px;
     transition: 1s ease;
   }
   .rightContainer {
@@ -40,7 +35,6 @@
     width: 100%;
     justify-content: center;
     transition: none;
-
   }
 
   .rightScoll {
@@ -51,7 +45,7 @@
   }
 
   .imgWrapper {
-    margin-top: 50px;
+    margin-top: 100px;
   }
   .longBox {
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -114,9 +108,269 @@
     animation: typewriter 4s steps(44) 1s 1 normal both,
       blinkTextCursor 500ms steps(44) infinite normal;
   }
-  
+}
+@media (max-width: 1040px) {
+  .hamburger {
+    position: fixed;
+    right: 0;
+    padding: 20px;
+    z-index: 1000;
+  }
+  .nav {
+    position: fixed;
+    right: 0;
+    width: 100%;
+    min-height: 100%;
+    top: 0;
+    bottom: 0;
+    transition: all 1s ease;
+    z-index: 999;
+    background-color: #181715;
+  }
+
+  .navIn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 5;
+    position: relative;
+    width: 100%;
+    padding: 100px 16%;
+  }
+  .navbarList {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 200px;
+  }
+  .navbarLabel {
+    padding: 0;
+    font-size: 18px;
+    color: #888;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 0 0 26px;
+    letter-spacing: 0.25px;
+  }
+
+  .listElement {
+    padding: 0;
+    margin: 0 0 10px 0;
+    transition: all 0.5s ease;
+    transform: translateX(0);
+    opacity: 1;
+    font-size: 30px;
+    color: aliceblue;
+  }
+
+  .listElement:hover{
+color:#96754e ;    
+  }
+.link{
+  text-decoration: none;
+}
+.link:hover{
+  color: orange;
+}
+  .social {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    position: relative;
+    top: 40px;
+
+  }
+  .socialIcons {
+    color: rgb(44, 43, 43);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+  }
+  .image {
+    width: 400px;
+    height: 400px;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+    float: left;
+    clear: both;
+  }
+
+  .leftContainer {
+    position: relative;
+    float: none;
+    clear: none;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    transition: all 1s ease;
+  }
+
+  .leftScroll {
+    position: relative;
+    float: none;
+    clear: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    transition: 1s ease;
+  }
+  .rightContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    transition: none;
+  }
+
+  .rightScoll {
+    display: flex;
+    width: 100%;
+    min-height: 100%;
+    justify-content: center;
+  }
+
+  .imgWrapper {
+    margin-top: 100px;
+  }
+  .longBox {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: fit-content;
+    padding: 10px 30px;
+  }
+
+  .longBoxScroll {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: fit-content;
+    padding: 10px;
+  }
+  .wideBox {
+    border: 1px solid yellow;
+    padding: 20px 10px;
+    margin: -20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    justify-content: center;
+    text-align: center;
+  }
+  .wideBoxScroll {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+  }
+  .changedTitle {
+    border-width: 0 1px 0 1px;
+    border-color: #ddd;
+    font-size: 23px;
+    vertical-align: baseline;
+    width: 100%;
+    height: auto;
+  }
+  .changedTitle::before {
+    content: "[";
+    color: green;
+    animation: opacity 3s infinite;
+    font-size: 35px;
+    padding-right: 5px;
+  }
+  .changedTitle::after {
+    content: "]";
+    color: green;
+    animation: opacity 3s infinite;
+    font-size: 35px;
+    padding-left: 5px;
+  }
+
+  .line {
+    position: relative;
+    top: 50%;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+      blinkTextCursor 500ms steps(44) infinite normal;
+  }
 }
 @media (min-width: 1040px) {
+  .hamburger {
+    position: fixed;
+    right: 0;
+    padding: 20px;
+    z-index: 1000;
+  }
+  .nav {
+    position: fixed;
+    right: 0;
+    width: 44%;
+    min-height: 100%;
+    top: 0;
+    bottom: 0;
+    transition: all 1s ease;
+    z-index: 999;
+    background-color: #181715;
+  }
+
+  .navIn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 5;
+    position: relative;
+    width: 100%;
+    padding: 100px 16%;
+  }
+  .navbarList {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 200px;
+  }
+  .navbarLabel {
+    padding: 0;
+    font-size: 18px;
+    color: #888;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 0 0 26px;
+    letter-spacing: 0.25px;
+  }
+
+  .listElement {
+    padding: 0;
+    margin: 0 0 10px 0;
+    transition: all 0.5s ease;
+    transition-delay: 900ms;
+    transform: translateX(0);
+    opacity: 1;
+    font-size: 30px;
+  }
+  .social {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+  }
+  .socialIcons {
+    color: rgb(44, 43, 43);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+  }
   .wrapper {
     display: flex;
     flex-direction: row;
@@ -179,7 +433,7 @@
     width: 80%;
     height: 900px;
 
-    margin-top: 50px;
+    margin-top: 100px;
 
     transform: none;
   }
