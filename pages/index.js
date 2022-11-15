@@ -10,7 +10,7 @@ import { BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
 import Hamburger from "hamburger-react";
 import Nav from "../components/Sidebar/Nav";
 export default function Home() {
-  const [nav, setNav] = useState(true);
+  const [nav, setNav] = useState(false);
 
   const hideShowNav = () => {
     setNav(!nav);
