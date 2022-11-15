@@ -8,8 +8,9 @@ import classes from "../styles/Home.module.css";
 import profileImage from "./img/IMG.jpeg";
 import { BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
 import Hamburger from "hamburger-react";
+import Nav from "../components/Sidebar/Nav";
 export default function Home() {
-  const [nav, setNav] = useState(false);
+  const [nav, setNav] = useState(true);
 
   const hideShowNav = () => {
     setNav(!nav);
@@ -33,6 +34,9 @@ export default function Home() {
   }, [shuffle]);
   const [state, setState] = useState(false);
 
+  // useEffect(() => {
+  //   return;
+  // }, [nav,state]);
   useEffect(function onFirstMount() {
     const changeValue = () => {
       const scrollValue = document.documentElement.scrollTop;
@@ -46,6 +50,11 @@ export default function Home() {
   });
   return (
     <div className={classes.wrapper}>
+      <div className={classes.hamburger}>
+        <Hamburger toggled={nav} toggle={hideShowNav} />
+      </div>
+      {nav && <Nav setNav={setNav} />}
+
       <div className={state ? classes.leftScroll : classes.leftContainer}>
         <section id="about">
           <AboutMe />
@@ -57,85 +66,7 @@ export default function Home() {
           <Contact />
         </section>
       </div>
-      <div
-        id="#about"
-        className={state ? classes.rightScoll : classes.rightContainer}
-      >
-        <div className={classes.hamburger}>
-          <Hamburger toggled={nav} toggle={hideShowNav} />
-        </div>
-        {nav && (
-          <div className={classes.nav}>
-            <div className={classes.navIn}>
-              <nav className={classes.navbar}>
-                <h3 className={classes.navbarLabel}>Menu</h3>
-                <ul className={classes.navbarList}>
-                  <Link className={classes.link} href={"#about"} scroll={false}>
-                    <li
-                      className={classes.listElement}
-                      onClick={() => {
-                        setNav(false);
-                      }}
-                    >
-                      about
-                    </li>
-                  </Link>
-
-                  <Link className={classes.link} href={"#edusk"} scroll={false}>
-                    {" "}
-                    <li
-                      className={classes.listElement}
-                      onClick={() => {
-                        setNav(false);
-                      }}
-                    >
-                      Education
-                    </li>
-                  </Link>
-
-                  <Link
-                    className={classes.link}
-                    href={"#contact"}
-                    scroll={false}
-                  >
-                    <li
-                      className={classes.listElement}
-                      onClick={() => {
-                        setNav(false);
-                      }}
-                    >
-                      Contact
-                    </li>
-                  </Link>
-                </ul>
-              </nav>
-              <div className={classes.social}>
-                <Link href={"https://github.com/raefbakleh96"} target="_blank">
-                  <div className={classes.socialIcons}>
-                    <BsGithub size={35} />
-                  </div>
-                </Link>
-                <Link
-                  href={"https://www.linkedin.com/in/raef-bakleh-021293230/"}
-                  target="_blank"
-                >
-                  <div className={classes.socialIcons}>
-                    <BsLinkedin size={35} />
-                  </div>
-                </Link>
-                <Link
-                  href={"https://www.instagram.com/raefbakleh/"}
-                  target="_blank"
-                >
-                  <div className={classes.socialIcons}>
-                    <BsInstagram size={35} />
-                  </div>
-                </Link>
-              </div>
-            </div>
-          </div>
-        )}
-
+      <div className={state ? classes.rightScoll : classes.rightContainer}>
         <div className={classes.imgWrapper}>
           <div className={state ? classes.longBoxScroll : classes.longBox}>
             <div className={state ? classes.wideBoxScroll : classes.wideBox}>

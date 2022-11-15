@@ -1,7 +1,15 @@
 @media (max-width: 500px) {
+  .hamburger {
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 20px;
+    z-index: 1000;
+  }
+
   .image {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
   }
   .wrapper {
     display: flex;
@@ -15,10 +23,12 @@
     position: relative;
     float: none;
     clear: none;
+    padding: 20px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    transition: all 1s ease;
+    padding: 20px;
+    animation: all 1s ease;
   }
 
   .leftScroll {
@@ -28,13 +38,14 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    transition: 1s ease;
+    padding: 20px;
+    animation: 1s ease;
   }
   .rightContainer {
     display: flex;
     width: 100%;
     justify-content: center;
-    transition: none;
+    animation: none;
   }
 
   .rightScoll {
@@ -113,80 +124,11 @@
   .hamburger {
     position: fixed;
     right: 0;
+    top: 0;
     padding: 20px;
     z-index: 1000;
   }
-  .nav {
-    position: fixed;
-    right: 0;
-    width: 100%;
-    min-height: 100%;
-    top: 0;
-    bottom: 0;
-    transition: all 1s ease;
-    z-index: 999;
-    background-color: #181715;
-  }
 
-  .navIn {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    z-index: 5;
-    position: relative;
-    width: 100%;
-    padding: 100px 16%;
-  }
-  .navbarList {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 200px;
-  }
-  .navbarLabel {
-    padding: 0;
-    font-size: 18px;
-    color: #888;
-    text-transform: uppercase;
-    font-weight: 800;
-    margin: 0 0 26px;
-    letter-spacing: 0.25px;
-  }
-
-  .listElement {
-    padding: 0;
-    margin: 0 0 10px 0;
-    transition: all 0.5s ease;
-    transform: translateX(0);
-    opacity: 1;
-    font-size: 30px;
-    color: aliceblue;
-  }
-
-  .listElement:hover {
-    color: #96754e;
-  }
-  .link {
-    text-decoration: none;
-  }
-
-  .social {
-    display: flex;
-    flex-direction: row;
-    gap: 25px;
-    position: relative;
-    top: 40px;
-  }
-  .socialIcons {
-    color: rgb(44, 43, 43);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 15px;
-    transition: all 0.3s ease;
-  }
   .image {
     width: 400px;
     height: 400px;
@@ -208,7 +150,7 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
-    transition: all 1s ease;
+    animation: all 1s ease;
   }
 
   .leftScroll {
@@ -219,13 +161,13 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
-    transition: 1s ease;
+    animation: 1s ease;
   }
   .rightContainer {
     display: flex;
     width: 100%;
     justify-content: center;
-    transition: none;
+    animation: none;
   }
 
   .rightScoll {
@@ -304,80 +246,12 @@
   .hamburger {
     position: fixed;
     right: 0;
+    top: 0;
     padding: 20px;
     z-index: 1000;
   }
-  .nav {
-    position: fixed;
-    right: 0;
-    width: 44%;
-    min-height: 100%;
-    top: 0;
-    bottom: 0;
-    transition: all 1s ease;
-    z-index: 999;
-    background-color: #181715;
-  }
 
-  .navIn {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    z-index: 5;
-    position: relative;
-    width: 100%;
-    padding: 100px 16%;
-  }
-  .navbarList {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 200px;
-  }
-  .navbarLabel {
-    padding: 0;
-    font-size: 18px;
-    color: #888;
-    text-transform: uppercase;
-    font-weight: 800;
-    margin: 0 0 26px;
-    letter-spacing: 0.25px;
-  }
-
-  .listElement {
-    padding: 0;
-    margin: 0 0 10px 0;
-    transition: all 0.5s ease;
-    transform: translateX(0);
-    opacity: 1;
-    font-size: 30px;
-    color: aliceblue;
-  }
-  .listElement:hover {
-    color: #96754e;
-  }
-  .link {
-    text-decoration: none;
-  }
-
-  .social {
-    display: flex;
-    flex-direction: row;
-    gap: 25px;
-  }
-  .socialIcons {
-    color: rgb(44, 43, 43);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 15px;
-    transition: all 0.3s ease;
-  }
   .wrapper {
-    display: flex;
-    flex-direction: row;
     gap: 20px;
     justify-content: space-between;
   }
@@ -391,13 +265,13 @@
     width: 50%;
     display: flex;
     flex-direction: column;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
   }
 
   .leftScroll {
     height: 100%;
     width: 68%;
-    transition: all 1s ease;
+    transition: ease 1s;
   }
   .rightContainer {
     position: fixed;
@@ -406,10 +280,10 @@
     min-height: 100vh;
     justify-content: center;
     border-left: 2px solid rgba(255, 255, 255, 0.2);
-    transition: all 1s ease;
     top: 0;
     right: 0;
     bottom: 0;
+    transition: all 0.5s ease;
   }
   .rightScoll {
     top: 0;
@@ -420,13 +294,14 @@
     display: flex;
     justify-content: center;
     border-left: solid white;
-    transition: all 1s ease-out;
     border-left: 2px solid rgba(255, 255, 255, 0.2);
+    transition: all 1s ease;
   }
   .rightContainer .image {
     width: auto;
     height: 400px;
     box-sizing: border-box;
+    transition: ease-in-out 0.5s;
   }
   .rightScoll .image {
     width: auto;
@@ -436,10 +311,7 @@
   .rightContainer > .imgWrapper {
     width: 80%;
     height: 900px;
-
     margin-top: 100px;
-
-    transform: none;
   }
 
   .rightScoll .imgWrapper {
@@ -558,7 +430,6 @@
   }
 }
 
-/* The typewriter cursor effect */
 @keyframes blink-caret {
   from,
   to {

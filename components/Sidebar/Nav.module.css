@@ -1,6 +1,167 @@
-.hamburger {
-  position: fixed;
-  right: 0;
-  padding: 20px;
-  z-index: 1000;
+@media (min-width: 1040px) {
+  .overlay {
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    width: 60%;
+    min-height: 1000px;
+    background-color: #1d1b19;
+    z-index: 100;
+    opacity: 0.9;
+  }
+  .nav {
+    position: fixed;
+    right: 0;
+    width: 40%;
+    min-height: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: #181715;
+    transition: all 2s ease;
+  }
+
+  .navIn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 5;
+    position: relative;
+    width: 100%;
+    padding: 100px 16%;
+  }
+  .navbarList {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 200px;
+  }
+  .navbarLabel {
+    padding: 0;
+    font-size: 18px;
+    color: #888;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 0 0 26px;
+    letter-spacing: 0.25px;
+  }
+
+  .listElement {
+    padding: 0;
+    margin: 0 0 10px 0;
+    transform: translateX(0);
+    opacity: 1;
+    font-size: 30px;
+    color: aliceblue;
+  }
+  .listElement:hover {
+    color: #96754e;
+  }
+  .link {
+    text-decoration: none;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+  }
+  .socialIcons {
+    color: rgb(44, 43, 43);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+  }
+}
+@media (max-width: 1040px) {
+  .overlay {
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    width: 0%;
+    min-height: 1000px;
+    background-color: #1d1b19;
+    z-index: 100;
+    opacity: 0.9;
+  }
+  .nav {
+    position: fixed;
+    right: 0;
+    width: 100%;
+    min-height: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: #181715;
+  }
+
+  .navIn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 5;
+    position: relative;
+    width: 100%;
+    padding: 100px 16%;
+  }
+  .navbarList {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 200px;
+    transition: all 0.5s ease;
+  }
+  .navbarLabel {
+    padding: 0;
+    font-size: 18px;
+    color: #888;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 0 0 26px;
+    letter-spacing: 0.25px;
+  }
+
+  .listElement {
+    padding: 0;
+    margin: 0 0 10px 0;
+    transition: all 0.5s ease;
+    transform: translateX(0);
+    opacity: 1;
+    font-size: 30px;
+    color: aliceblue;
+  }
+
+  .listElement:hover {
+    color: #96754e;
+  }
+  .link {
+    text-decoration: none;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    position: relative;
+    top: 40px;
+  }
+  .socialIcons {
+    color: rgb(44, 43, 43);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+  }
+  .image {
+    width: 400px;
+    height: 400px;
+  }
 }
