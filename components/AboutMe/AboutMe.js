@@ -53,7 +53,7 @@ function AboutMe() {
           </div>
           <div className={classes.aboutRight}>
             <div className={classes.cvDownload}>
-              <a href="../../files/cv.pdf" download>
+              <a target="_blank" download>
                 <span className={classes.icon}>
                   <GoDesktopDownload size={75} />
                 </span>
