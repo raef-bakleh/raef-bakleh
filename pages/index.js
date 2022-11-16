@@ -6,9 +6,10 @@ import Contact from "../components/Contact/Contact";
 import EduSk from "../components/EduSk/EduSk";
 import classes from "../styles/Home.module.css";
 import profileImage from "./img/IMG.jpeg";
-import { BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
 import Hamburger from "hamburger-react";
 import Nav from "../components/Sidebar/Nav";
+import Typewriter from "typewriter-effect";
+
 export default function Home() {
   const [nav, setNav] = useState(false);
 
@@ -23,15 +24,15 @@ export default function Home() {
   ];
   const [newName, setnewName] = useState("");
 
-  const shuffle = useCallback(() => {
-    const index = Math.floor(Math.random() * names.length);
-    setnewName(names[index]);
-  }, []);
+  // const shuffle = useCallback(() => {
+  //   const index = Math.floor(Math.random() * names.length);
+  //   setnewName(names[index]);
+  // }, []);
 
-  useEffect(() => {
-    const intervalID = setInterval(shuffle, 5000);
-    return () => clearInterval(intervalID);
-  }, [shuffle]);
+  // useEffect(() => {
+  //   const intervalID = setInterval(shuffle, 5000);
+  //   return () => clearInterval(intervalID);
+  // }, [shuffle]);
   const [state, setState] = useState(false);
 
   // useEffect(() => {
@@ -72,7 +73,27 @@ export default function Home() {
             <div className={state ? classes.wideBoxScroll : classes.wideBox}>
               <Image src={profileImage} className={classes.image} />
               <p>HI THERE I AM</p>
-              <div className={classes.changedTitle}>{newName}</div>
+              <div className={classes.changedTitle}>
+                <Typewriter
+                  options={{
+                    autoStart: true,
+                    loop: true,
+                  }}
+                  onInit={(typewriter) => {
+                    typewriter
+                      .typeString(names[0])
+
+                      .pauseFor(3000)
+                      .deleteAll()
+                      .typeString(names[1])
+                      .pauseFor(3000)
+                      .deleteAll()
+                      .typeString(names[2])
+                      .pauseFor(3000)
+                      .start();
+                  }}
+                />
+              </div>
             </div>
           </div>
         </div>

@@ -28,7 +28,7 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
-    animation: all 1s ease;
+    animation: all 0.5s ease;
   }
 
   .leftScroll {
@@ -212,6 +212,9 @@
     vertical-align: baseline;
     width: 100%;
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .changedTitle::before {
     content: "[";
@@ -265,7 +268,7 @@
     width: 50%;
     display: flex;
     flex-direction: column;
-    transition: all 0.5s ease;
+    transition: all 1s ease;
   }
 
   .leftScroll {
@@ -283,7 +286,7 @@
     top: 0;
     right: 0;
     bottom: 0;
-    transition: all 0.5s ease;
+    transition: all 1s ease;
   }
   .rightScoll {
     top: 0;
@@ -301,12 +304,15 @@
     width: auto;
     height: 400px;
     box-sizing: border-box;
-    transition: ease-in-out 0.5s;
+    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045) 1s;
+    border-radius: 7px;
   }
   .rightScoll .image {
     width: auto;
     height: 200px;
     box-sizing: border-box;
+    transition: ease 1s;
+    border-radius: 7px;
   }
   .rightContainer > .imgWrapper {
     width: 80%;
@@ -349,32 +355,35 @@
   .rightContainer .changedTitle {
     border-width: 0 1px 0 1px;
     border-color: #ddd;
-    font-size: 23px;
-    vertical-align: baseline;
+    font-size: 25px;
     width: 100%;
-    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .rightScoll .changedTitle {
     border-width: 0 1px 0 1px;
     border-color: #ddd;
-    font-size: 13px;
+    font-size: 15px;
     vertical-align: baseline;
     width: 100%;
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .rightContainer .changedTitle::before {
     content: "[";
     color: green;
     animation: opacity 3s infinite;
     font-size: 35px;
-    padding-right: 5px;
   }
   .rightScoll .changedTitle::before {
+    position: relative;
     content: "[";
     color: green;
     animation: opacity 3s infinite;
     font-size: 20px;
-    padding-right: 5px;
   }
   .rightContainer .changedTitle::after {
     content: "]";
@@ -403,40 +412,6 @@
     overflow: hidden;
     animation: typewriter 4s steps(44) 1s 1 normal both,
       blinkTextCursor 500ms steps(44) infinite normal;
-  }
-}
-@keyframes typewriter {
-  from {
-    width: 0;
-  }
-  to {
-    width: 24em;
-  }
-}
-@keyframes blinkTextCursor {
-  from {
-    border-right-color: rgba(255, 255, 255, 0.75);
-  }
-  to {
-    border-right-color: transparent;
-  }
-}
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: orange;
   }
 }
 
@@ -497,7 +472,7 @@
     opacity: 0;
   }
 
-  1% {
+  20% {
     display: block;
     opacity: 0;
   }

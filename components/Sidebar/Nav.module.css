@@ -98,6 +98,7 @@
     bottom: 0;
     z-index: 999;
     background-color: #181715;
+    animation-delay: 1s;
   }
 
   .navIn {
