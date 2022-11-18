@@ -155,6 +155,11 @@
   font-size: 20px;
   box-sizing: border-box;
 }
+.inputBig > input[id="phone"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  -moz-appearance: textfield;
+}
 .inputBig > label[id="phone"] {
   position: relative;
   pointer-events: none;
