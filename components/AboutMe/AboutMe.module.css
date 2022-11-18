@@ -81,6 +81,7 @@
     position: relative;
     height: 150px;
     border: 2px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
   }
   .cvDownload:hover {
     border: 2px solid orange;
@@ -136,7 +137,7 @@
     padding: 0;
     vertical-align: baseline;
     outline: none;
-    width: 50%;
+    width: 100%;
   }
   .about {
     margin-top: 70px;
@@ -187,11 +188,12 @@
 
   .cvDownload {
     display: flex;
-
+    width: 80%;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    justify-content: center;
   }
-  .cvDownload a:hover {
+  .cvDownload:hover {
     border-color: #96754e;
-
   }
   .cvDownload a {
     display: flex;
@@ -203,7 +205,6 @@
     justify-content: center;
     width: 250px;
     height: 200px;
-    border: 2px solid rgba(255, 255, 255, 0.2);
   }
 
   .icon {

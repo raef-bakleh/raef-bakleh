@@ -4,7 +4,7 @@ import classes from "./EduSk.module.css";
 function EduSk() {
   const [education, seteEducation] = useState(false);
   const [skills, setSkills] = useState(false);
-  const [experience, setExperience] = useState(false);
+  const [experience, setExperience] = useState(true);
 
   const educationClicked = () => {
     seteEducation(!education);

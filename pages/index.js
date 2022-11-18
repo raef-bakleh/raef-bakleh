@@ -16,28 +16,14 @@ export default function Home() {
   const hideShowNav = () => {
     setNav(!nav);
   };
-  console.log(nav);
   const names = [
     "Raef Bakleh",
     "Computer Science Student",
     "Learning Web Development",
   ];
-  const [newName, setnewName] = useState("");
 
-  // const shuffle = useCallback(() => {
-  //   const index = Math.floor(Math.random() * names.length);
-  //   setnewName(names[index]);
-  // }, []);
-
-  // useEffect(() => {
-  //   const intervalID = setInterval(shuffle, 5000);
-  //   return () => clearInterval(intervalID);
-  // }, [shuffle]);
   const [state, setState] = useState(false);
 
-  // useEffect(() => {
-  //   return;
-  // }, [nav,state]);
   useEffect(function onFirstMount() {
     const changeValue = () => {
       const scrollValue = document.documentElement.scrollTop;

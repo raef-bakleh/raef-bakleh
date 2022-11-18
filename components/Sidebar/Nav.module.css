@@ -88,6 +88,8 @@
     background-color: #1d1b19;
     z-index: 100;
     opacity: 0.9;
+    transition: all 10s ease;
+
   }
   .nav {
     position: fixed;
@@ -98,7 +100,7 @@
     bottom: 0;
     z-index: 999;
     background-color: #181715;
-    animation-delay: 1s;
+    transition:  10s ease-in-out;
   }
 
   .navIn {
@@ -114,7 +116,7 @@
     list-style: none;
     padding: 0;
     margin-bottom: 200px;
-    transition: all 0.5s ease;
+    transition: all 10s ease;
   }
   .navbarLabel {
     padding: 0;

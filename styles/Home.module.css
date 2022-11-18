@@ -325,10 +325,14 @@
     margin-top: 100px;
     height: 700px;
   }
+
   .longBox {
     border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 10px 30px;
     box-sizing: border-box;
+  }
+  .longBox:hover {
+    border: 1px solid #96754e;
   }
 
   .longBoxScroll {
@@ -336,14 +340,20 @@
     padding: 10px;
     box-sizing: border-box;
   }
+  .longBoxScroll:hover {
+    border: 1px solid #96754e;
+  }
   .wideBox {
-    border: 1px solid yellow;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
     padding: 20px 10px;
     margin: -20px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
     justify-content: center;
     text-align: center;
     box-sizing: border-box;
+  }
+  .wideBox:hover {
+    border: 1px solid #96754e;
   }
   .wideBoxScroll {
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -351,6 +361,9 @@
     justify-content: center;
     text-align: center;
     box-sizing: border-box;
+  }
+  .wideBoxScroll:hover {
+    border: 1px solid #96754e;
   }
   .rightContainer .changedTitle {
     border-width: 0 1px 0 1px;

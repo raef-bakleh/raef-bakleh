@@ -3,12 +3,12 @@
   align-items: center;
   width: 100%;
   box-sizing: border-box;
-  justify-content:center;
+  justify-content: center;
 }
 .contact {
   display: flex;
   justify-content: center;
-  width:100%;
+  width: 100%;
   box-sizing: border-box;
 }
 .head {
@@ -70,11 +70,11 @@
 }
 .smallInputHasValue:focus {
   box-sizing: border-box;
-  border: 1px solid orange;
+  border: 1px solid #96754e;
 }
 
 .smallInputHasValue ~ label[id="name"] {
-  color: orange;
+  color: #96754e;
   transition: 0.5s;
   background-color: #1d1b19;
   width: 100px;
@@ -84,7 +84,7 @@
 }
 
 .inputSmall > :is(input[id="name"]:focus) ~ label[id="name"] {
-  color: orange;
+  color: #96754e;
   top: -65px;
   transition: 0.5s;
   background-color: #1d1b19;
@@ -103,7 +103,7 @@
   font-size: 30px;
 }
 .smallInputHasValue ~ label[id="email"] {
-  color: orange;
+  color: #96754e;
   background-color: #1d1b19;
   width: 100px;
   text-align: center;
@@ -111,7 +111,7 @@
   top: -65px;
 }
 .inputSmall > :is(input[id="email"]:focus) ~ label[id="email"] {
-  color: orange;
+  color: #96754e;
   top: -65px;
   transition: 0.5s;
   background-color: #1d1b19;
@@ -140,7 +140,7 @@
 }
 
 .bigInputHasValue:focus {
-  border: 1px solid orange;
+  border: 1px solid #96754e;
 }
 .bigInputHasValue::placeholder {
   text-align: right;
@@ -165,7 +165,7 @@
   font-size: 30px;
 }
 .inputBig > :is(input[id="phone"]:focus) ~ label[id="phone"] {
-  color: orange;
+  color: #96754e;
   top: -65px;
   transition: 0.5s;
   background-color: #1d1b19;
@@ -174,7 +174,7 @@
   font-size: 20px;
 }
 .bigInputHasValue ~ label[id="phone"] {
-  color: orange;
+  color: #96754e;
   transition: 0.5s;
   background-color: #1d1b19;
   width: 100px;
@@ -202,7 +202,7 @@
   font-size: 30px;
 }
 .inputBig > :is(textarea[id="message"]:focus) ~ label[id="message"] {
-  color: orange;
+  color: #96754e;
   top: -315px;
   transition: 0.5s;
   background-color: #1d1b19;
@@ -213,7 +213,7 @@
   box-sizing: border-box;
 }
 .bigInputHasValue ~ label[id="message"] {
-  color: orange;
+  color: #96754e;
   transition: 0.5s;
   background-color: #1d1b19;
   width: 100px;
@@ -231,8 +231,8 @@
   margin-bottom: 20px;
 }
 .send:hover {
-  color: orange;
-  border: 1px solid orange;
+  color: #96754e;
+  border: 1px solid #96754e;
 }
 
 .formSubmitted {
