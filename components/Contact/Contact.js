@@ -68,6 +68,7 @@ function Contact() {
           <div className={classes.small}>
             <div className={classes.inputSmall}>
               <input
+                required
                 type="text"
                 value={name}
                 name="name"
@@ -83,6 +84,7 @@ function Contact() {
             </div>
             <div className={classes.inputSmall}>
               <input
+                required
                 type="text"
                 value={email}
                 name="email"
@@ -122,6 +124,7 @@ function Contact() {
               className={` ${
                 message ? classes.bigInputHasValue : classes.bigInput
               }`}
+              required
             ></textarea>
             <label id="message" htmlFor="message">
               Message

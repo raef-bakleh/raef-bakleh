@@ -27,13 +27,14 @@
 .choose {
   cursor: pointer;
   font-size: 35px;
+  color: rgba(255, 255, 255, 0.5);
 }
 .choose:focus {
   color: red;
 }
 .clicked {
   color: #96754e;
-  text-decoration:underline 2px #96754e;
+  text-decoration: underline 2px #96754e;
   text-underline-offset: 0.2em;
   transform: underline scaleX(1) 1s;
 }

@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST={}
+self.__REACT_LOADABLE_MANIFEST={"index.js -> react-animated-cursor":{"id":"index.js -> react-animated-cursor","files":[]}}

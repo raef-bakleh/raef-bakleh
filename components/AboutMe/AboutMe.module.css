@@ -191,6 +191,7 @@
     width: 80%;
     border: 2px solid rgba(255, 255, 255, 0.2);
     justify-content: center;
+   
   }
   .cvDownload:hover {
     border-color: #96754e;

@@ -9,9 +9,14 @@ import profileImage from "./img/IMG.jpeg";
 import Hamburger from "hamburger-react";
 import Nav from "../components/Sidebar/Nav";
 import Typewriter from "typewriter-effect";
+import AnimatedCursor from "react-animated-cursor";
+import dynamic from "next/dynamic";
 
 export default function Home() {
   const [nav, setNav] = useState(false);
+  const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
+    ssr: false,
+  });
 
   const hideShowNav = () => {
     setNav(!nav);
@@ -37,10 +42,27 @@ export default function Home() {
   });
   return (
     <div className={classes.wrapper}>
+      <AnimatedCursor
+        color="75, 73, 73"
+        innerSize={8}
+        outerSize={25}
+        innerScale={0}
+        outerScale={1}
+        outerAlpha={0}
+        trailingSpeed={5}
+        outerStyle={{
+          border: "2px solid rgb(75, 73, 73)",
+          zIndex: "10001",
+        }}
+        innerStyle={{
+          zIndex: "1001",
+        }}
+        hasBlendMode={true}
+      />
       <div className={classes.hamburger}>
         <Hamburger toggled={nav} toggle={hideShowNav} />
+        {nav && <Nav setNav={setNav} />}
       </div>
-      {nav && <Nav setNav={setNav} />}
 
       <div className={state ? classes.leftScroll : classes.leftContainer}>
         <section id="about">

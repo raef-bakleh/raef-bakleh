@@ -19,7 +19,6 @@
     bottom: 0;
     z-index: 999;
     background-color: #181715;
-    transition: all 2s ease;
   }
 
   .navIn {
@@ -89,7 +88,6 @@
     z-index: 100;
     opacity: 0.9;
     transition: all 10s ease;
-
   }
   .nav {
     position: fixed;
@@ -100,7 +98,7 @@
     bottom: 0;
     z-index: 999;
     background-color: #181715;
-    transition:  10s ease-in-out;
+    transition: 10s ease-in-out;
   }
 
   .navIn {
@@ -126,6 +124,7 @@
     font-weight: 800;
     margin: 0 0 26px;
     letter-spacing: 0.25px;
+    animation: backwards 10s;
   }
 
   .listElement {

@@ -1,52 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "./Nav.module.css";
 import { BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
 import Link from "next/link";
 
 function Nav({ setNav }) {
+  const [isOpened, setIsOpened] = useState(false);
+  const closeNavbar = () => {
+    setNav(false);
+  };
   return (
     <div>
       <div className={classes.nav}>
-        <div
-          className={classes.overlay}
-          onClick={() => {
-            setNav(false);
-          }}
-        ></div>
+        <div className={classes.overlay} onClick={closeNavbar}></div>
         <div className={classes.navIn}>
           <nav className={classes.navbar}>
             <h3 className={classes.navbarLabel}>Menu</h3>
             <ul className={classes.navbarList}>
               <Link className={classes.link} href={"#about"} scroll={false}>
-                <li
-                  className={classes.listElement}
-                  onClick={() => {
-                    setNav(false);
-                  }}
-                >
+                <li className={classes.listElement} onClick={closeNavbar}>
                   about
                 </li>
               </Link>
 
               <Link className={classes.link} href={"#edusk"} scroll={false}>
                 {" "}
-                <li
-                  className={classes.listElement}
-                  onClick={() => {
-                    setNav(false);
-                  }}
-                >
+                <li className={classes.listElement} onClick={closeNavbar}>
                   Education
                 </li>
               </Link>
 
               <Link className={classes.link} href={"#contact"} scroll={false}>
-                <li
-                  className={classes.listElement}
-                  onClick={() => {
-                    setNav(false);
-                  }}
-                >
+                <li className={classes.listElement} onClick={closeNavbar}>
                   Contact
                 </li>
               </Link>
