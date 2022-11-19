@@ -141,6 +141,9 @@
     font-size: 30px;
     letter-spacing: 2px;
   }
+  .paragraph:hover {
+    color: #96754e;
+  }
   .aboutLeft {
     width: 100%;
   }
