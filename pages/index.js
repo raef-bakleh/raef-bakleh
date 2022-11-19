@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import AboutMe from "../components/AboutMe/AboutMe";
 import Contact from "../components/Contact/Contact";
 import EduSk from "../components/EduSk/EduSk";
@@ -9,13 +9,12 @@ import profileImage from "./img/IMG.jpeg";
 import Hamburger from "hamburger-react";
 import Nav from "../components/Sidebar/Nav";
 import Typewriter from "typewriter-effect";
-import AnimatedCursor from "react-animated-cursor";
 import dynamic from "next/dynamic";
 
 export default function Home() {
   const [nav, setNav] = useState(false);
   const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
-    ssr: false,
+    ssr: true,
   });
 
   const hideShowNav = () => {
@@ -57,7 +56,7 @@ export default function Home() {
         innerStyle={{
           zIndex: "1001",
         }}
-        hasBlendMode={true}
+        clickables={["none"]}
       />
       <div className={classes.hamburger}>
         <Hamburger toggled={nav} toggle={hideShowNav} />

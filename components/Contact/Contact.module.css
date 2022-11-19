@@ -128,6 +128,7 @@
   outline: none;
   font-size: 20px;
   box-sizing: border-box;
+  cursor: text;
 }
 .bigInput {
   width: 100%;

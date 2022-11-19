@@ -12,6 +12,7 @@
     height: 300px;
   }
   .wrapper {
+    cursor: auto;
     display: flex;
     flex-direction: column-reverse;
     gap: 10px;
@@ -134,6 +135,7 @@
     height: 400px;
   }
   .wrapper {
+    cursor: auto;
     display: flex;
     flex-direction: column-reverse;
     gap: 10px;
@@ -255,6 +257,7 @@
   }
 
   .wrapper {
+    cursor: auto;
     gap: 20px;
     justify-content: space-between;
   }

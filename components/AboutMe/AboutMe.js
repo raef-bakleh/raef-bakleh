@@ -1,7 +1,24 @@
 import React from "react";
 import classes from "./AboutMe.module.css";
 import { GoDesktopDownload } from "react-icons/go";
+import { useRouter } from "next/router";
+import { useState } from "react";
 function AboutMe() {
+  const [isHoverEmail, setIsHoverEmail] = useState(false);
+  const handleMouseEnter = () => {
+    setIsHoverEmail(true);
+  };
+  const handleMouseLeaver = () => {
+    setIsHoverEmail(false);
+  };
+  const [isHoverPhone, setIsHoverPhone] = useState(false);
+  const handleMouseEnterPhone = () => {
+    setIsHoverPhone(true);
+  };
+  const handleMouseLeaverPhone = () => {
+    setIsHoverPhone(false);
+  };
+  const router = useRouter();
   return (
     <div className={classes.section}>
       <div className={classes.container}>
@@ -40,11 +57,39 @@ function AboutMe() {
                 </tr>
                 <tr className={classes.tableTr}>
                   <th className={classes.tableThFirst}>phone</th>
-                  <th className={classes.tableThSeconde}>+49 15204961016</th>
+                  <th
+                    className={classes.tableThSeconde}
+                    onMouseEnter={handleMouseEnterPhone}
+                    onMouseLeave={handleMouseLeaverPhone}
+                    onClick={() => {
+                      router.push("tel:+49 15204961016");
+                    }}
+                    style={{
+                      cursor: "pointer",
+                      color: isHoverPhone ? "#96754e" : "white",
+                      textDecoration: "underline 1px rgba(255, 255, 255, 0.2)",
+                      textUnderlineOffset: "0.2em ",
+                    }}
+                  >
+                    +49 15204961016
+                  </th>
                 </tr>
                 <tr className={classes.tableTr}>
                   <th className={classes.tableThFirst}>email</th>
-                  <th className={classes.tableThSeconde}>
+                  <th
+                    className={classes.tableThSeconde}
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeaver}
+                    onClick={() => {
+                      router.push("mailto:bakleh.raef@gmail.com");
+                    }}
+                    style={{
+                      cursor: "pointer",
+                      color: isHoverEmail ? "#96754e" : "",
+                      textDecoration: "underline 1px rgba(255, 255, 255, 0.2)",
+                      textUnderlineOffset: "0.2em ",
+                    }}
+                  >
                     bakleh.raef@gmail.com
                   </th>
                 </tr>

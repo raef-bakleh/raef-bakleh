@@ -25,9 +25,11 @@
   background-color: white;
 }
 .choose {
-  cursor: pointer;
   font-size: 35px;
   color: rgba(255, 255, 255, 0.5);
+}
+.choose:hover {
+  cursor: pointer;
 }
 .choose:focus {
   color: red;
@@ -36,8 +38,8 @@
   color: #96754e;
   text-decoration: underline 2px #96754e;
   text-underline-offset: 0.2em;
-  transform: underline scaleX(1) 1s;
 }
+
 .education {
   display: flex;
   flex-direction: column;
