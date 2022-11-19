@@ -3,6 +3,8 @@ import classes from "./AboutMe.module.css";
 import { GoDesktopDownload } from "react-icons/go";
 import { useRouter } from "next/router";
 import { useState } from "react";
+import AnimatedCursor from "react-animated-cursor";
+import dynamic from "next/dynamic";
 function AboutMe() {
   const [isHoverEmail, setIsHoverEmail] = useState(false);
   const handleMouseEnter = () => {
@@ -21,6 +23,23 @@ function AboutMe() {
   const router = useRouter();
   return (
     <div className={classes.section}>
+      {/* <AnimatedCursor
+        color="75, 73, 73"
+        innerSize={8}
+        outerSize={25}
+        innerScale={0}
+        outerScale={1}
+        outerAlpha={0}
+        trailingSpeed={5}
+        outerStyle={{
+          border: "2px solid rgb(75, 73, 73)",
+          zIndex: "10001",
+        }}
+        innerStyle={{
+          zIndex: "1001",
+        }}
+        clickables={["none"]}
+      /> */}
       <div className={classes.container}>
         <h3 className={classes.head}>INTRODUCTION</h3>
         <h1 className={classes.introTop}>About Me</h1>

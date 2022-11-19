@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { useEffect, useState } from "react";
 import AboutMe from "../components/AboutMe/AboutMe";
 import Contact from "../components/Contact/Contact";
@@ -12,10 +11,10 @@ import Typewriter from "typewriter-effect";
 import dynamic from "next/dynamic";
 
 export default function Home() {
-  const [nav, setNav] = useState(false);
   const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
-    ssr: true,
+    ssr: false,
   });
+  const [nav, setNav] = useState(false);
 
   const hideShowNav = () => {
     setNav(!nav);
@@ -60,8 +59,8 @@ export default function Home() {
       />
       <div className={classes.hamburger}>
         <Hamburger toggled={nav} toggle={hideShowNav} />
-        {nav && <Nav setNav={setNav} />}
       </div>
+      {nav && <Nav setNav={setNav} />}
 
       <div className={state ? classes.leftScroll : classes.leftContainer}>
         <section id="about">
