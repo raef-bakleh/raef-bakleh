@@ -13,13 +13,14 @@
   .introTop {
     margin-top: -5px;
     color: rgb(209, 211, 213);
+    font-size: 45px;
   }
   .line {
     content: "";
     width: 15%;
     height: 1px;
     background-color: #8f44fd;
-    margin-top: -1%;
+    margin-top: -3%;
   }
   .paragraph {
     color: rgba(255, 255, 255, 0.5);
@@ -133,7 +134,7 @@
     width: 15%;
     height: 1px;
     background-color: #8f44fd;
-    margin-top: -1%;
+    margin-top: -5%;
   }
   .paragraph {
     color: rgba(255, 255, 255, 0.5);
