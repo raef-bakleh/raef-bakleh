@@ -39,6 +39,27 @@
   text-decoration: underline 2px #96754e;
   text-underline-offset: 0.2em;
 }
+.clickedHover {
+  display: inline-block;
+  position: relative;
+  color: rgba(255, 255, 255, 0.5);
+}
+.clickedHover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #96754e;
+  transform-origin: center;
+  transition: transform 0.25s ease-out;
+}
+.clickedHover:hover::after {
+  transform: scaleX(1);
+  transform-origin: center bottom;
+}
 
 .education {
   display: flex;

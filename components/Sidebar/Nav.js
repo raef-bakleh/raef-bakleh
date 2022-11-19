@@ -37,7 +37,7 @@ function Nav({ setNav, nav }) {
               </ul>
             </nav>
             <div className={classes.social}>
-              <Link href={"https://github.com/raefbakleh96"} target="_blank">
+              <Link href={"https://github.com/raef-bakleh"} target="_blank">
                 <div className={classes.socialIcons}>
                   <BsGithub size={35} />
                 </div>

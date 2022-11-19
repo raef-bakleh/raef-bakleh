@@ -27,7 +27,7 @@ function EduSk() {
         <ul className={classes.filter}>
           <li className={classes.choose}>
             <a
-              className={education ? classes.clicked : ""}
+              className={education ? classes.clicked : classes.clickedHover}
               onClick={educationClicked}
             >
               Education
@@ -36,7 +36,7 @@ function EduSk() {
           <div className={classes.line}></div>
           <li className={classes.choose}>
             <a
-              className={skills ? classes.clicked : ""}
+              className={skills ? classes.clicked : classes.clickedHover}
               onClick={skillsClicked}
             >
               Skills
@@ -45,7 +45,7 @@ function EduSk() {
           <div className={classes.line}></div>
           <li className={classes.choose}>
             <a
-              className={experience ? classes.clicked : ""}
+              className={experience ? classes.clicked : classes.clickedHover}
               onClick={experienceClicked}
             >
               Experience
