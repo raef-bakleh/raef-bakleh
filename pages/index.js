@@ -21,7 +21,7 @@ export default function Home() {
   };
   const names = [
     "Raef Bakleh",
-    "Computer Science Student",
+    "Informatics Student",
     "Learning Web Development",
   ];
 
@@ -30,7 +30,7 @@ export default function Home() {
   useEffect(function onFirstMount() {
     const changeValue = () => {
       const scrollValue = document.documentElement.scrollTop;
-      if (scrollValue > 100) {
+      if (scrollValue > 150) {
         setState(true);
       } else {
         setState(false);
@@ -42,10 +42,10 @@ export default function Home() {
     <div className={classes.wrapper}>
       <AnimatedCursor
         color="75, 73, 73"
-        innerSize={8}
+        innerSize={4}
         outerSize={25}
-        innerScale={0}
-        outerScale={1}
+        innerScale={4}
+        outerScale={0}
         outerAlpha={0}
         trailingSpeed={5}
         outerStyle={{
@@ -54,13 +54,15 @@ export default function Home() {
         }}
         innerStyle={{
           zIndex: "1001",
+          border: "2px solid rgb(205, 73, 73)",
         }}
         clickables={["none"]}
       />
       <div className={classes.hamburger}>
         <Hamburger toggled={nav} toggle={hideShowNav} />
       </div>
-      {nav && <Nav setNav={setNav} />}
+
+      <Nav setNav={setNav} nav={nav} />
 
       <div className={state ? classes.leftScroll : classes.leftContainer}>
         <section id="about">

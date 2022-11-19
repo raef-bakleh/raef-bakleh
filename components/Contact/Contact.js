@@ -59,6 +59,7 @@ function Contact() {
       <div className={classes.contanct}>
         <h3 className={classes.head}>CONTACT</h3>
         <h1 className={classes.introTop}>Get In Touch</h1>
+        <div className={classes.line}></div>
         {submitMessage && (
           <div className={classes.formSubmitted}>
             Thank you for contacting, will reach you out as soon as possible!

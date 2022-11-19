@@ -3,8 +3,7 @@ import classes from "./AboutMe.module.css";
 import { GoDesktopDownload } from "react-icons/go";
 import { useRouter } from "next/router";
 import { useState } from "react";
-import AnimatedCursor from "react-animated-cursor";
-import dynamic from "next/dynamic";
+
 function AboutMe() {
   const [isHoverEmail, setIsHoverEmail] = useState(false);
   const handleMouseEnter = () => {
@@ -23,40 +22,17 @@ function AboutMe() {
   const router = useRouter();
   return (
     <div className={classes.section}>
-      {/* <AnimatedCursor
-        color="75, 73, 73"
-        innerSize={8}
-        outerSize={25}
-        innerScale={0}
-        outerScale={1}
-        outerAlpha={0}
-        trailingSpeed={5}
-        outerStyle={{
-          border: "2px solid rgb(75, 73, 73)",
-          zIndex: "10001",
-        }}
-        innerStyle={{
-          zIndex: "1001",
-        }}
-        clickables={["none"]}
-      /> */}
       <div className={classes.container}>
         <h3 className={classes.head}>INTRODUCTION</h3>
         <h1 className={classes.introTop}>About Me</h1>
+        <div className={classes.line}></div>
         <p className={classes.paragraph}>
-          {" "}
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aut
-          aliquid atque quis exercitationem, possimus eveniet suscipit obcaecati
-          fugiat. Adipisci ea voluptate, itaque dolor voluptas quas ducimus
-          repudiandae doloremque accusamus architecto molestias error debitis
-          quae cupiditate nostrum recusandae temporibus cum ipsam reprehenderit
-          a voluptatem. Placeat laudantium deserunt sint enim ut eum, eaque eius
-          temporibus dicta cumque neque sit, similique, libero nemo voluptas non
-          fugiat repellendus accusamus odio soluta consectetur dolorem?
-          Doloremque nemo accusantium laboriosam inventore eos necessitatibus!
-          Alias, ea natus dolorum quis nostrum veritatis blanditiis? Nostrum,
-          vel dolores? Neque atque enim iure pariatur ea porro eligendi officiis
-          quaerat inventore quis.
+          A hungry to learn informatics student. <br /> I am a punctual and
+          motivated individual who is able to work in a busy environment and
+          produce high standardsof work. <br /> I am an excellent team worker
+          and am able to take instructions fromall levels and build up good
+          working relationships with all colleagues. <br /> I am flexible,
+          reliable and possess excellent time keeping skills
         </p>
         <div className={classes.about}>
           <div className={classes.aboutLeft}>
@@ -117,11 +93,14 @@ function AboutMe() {
           </div>
           <div className={classes.aboutRight}>
             <div className={classes.cvDownload}>
-              <a target="_blank" download>
+              <a
+                href="http://www.raefbakleh.host20.uk/Lebenslauf.pdf"
+                target="_blank"
+                download
+              >
                 <span className={classes.icon}>
                   <GoDesktopDownload size={75} />
                 </span>
-
                 <span>Download CV</span>
               </a>
             </div>
