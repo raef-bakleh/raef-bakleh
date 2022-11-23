@@ -20,6 +20,12 @@
     z-index: 999;
     background-color: #181715;
     animation: all 1s ease-in;
+    transform: tranlsateX(100%);
+    transition: transform 1s;
+  }
+.navOpen {
+     transform: tranlsateX(0);
+  
   }
 
   .navIn {
