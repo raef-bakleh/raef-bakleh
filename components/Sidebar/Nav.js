@@ -11,7 +11,7 @@ function Nav({ setNav, nav }) {
   return (
     <div>
       {nav && (
-        <div className={classes.nav}>
+        <div className={ classes.nav, nav ? classes.navOpen : "" }>
           <div className={classes.overlay} onClick={closeNavbar}></div>
           <div className={classes.navIn}>
             <nav className={classes.navbar}>
