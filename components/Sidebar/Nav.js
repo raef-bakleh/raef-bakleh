@@ -10,7 +10,7 @@ function Nav({ setNav, nav }) {
   console.log(nav);
   return (
     <div>
-      {nav && (
+      
         <div className={ classes.nav, nav ? classes.navOpen : "" }>
           <div className={classes.overlay} onClick={closeNavbar}></div>
           <div className={classes.navIn}>
@@ -61,7 +61,7 @@ function Nav({ setNav, nav }) {
             </div>
           </div>
         </div>
-      )}
+   
     </div>
   );
 }
