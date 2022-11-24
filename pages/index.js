@@ -12,7 +12,7 @@ import dynamic from "next/dynamic";
 
 export default function Home() {
   const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
-    ssr: false,
+    ssr: true,
   });
   const [nav, setNav] = useState(false);
 
@@ -58,11 +58,6 @@ export default function Home() {
         }}
         clickables={["none"]}
       />
-      <div className={classes.hamburger}>
-        <Hamburger toggled={nav} toggle={hideShowNav} />
-      </div>
-
-      <Nav setNav={setNav} nav={nav} />
 
       <div className={state ? classes.leftScroll : classes.leftContainer}>
         <section id="about">
@@ -76,6 +71,11 @@ export default function Home() {
         </section>
       </div>
       <div className={state ? classes.rightScoll : classes.rightContainer}>
+        <div className={classes.hamburger}>
+          <Hamburger toggled={nav} toggle={hideShowNav} />
+        </div>
+        {<Nav setNav={setNav} nav={nav} />}
+
         <div className={classes.imgWrapper}>
           <div className={state ? classes.longBoxScroll : classes.longBox}>
             <div className={state ? classes.wideBoxScroll : classes.wideBox}>
