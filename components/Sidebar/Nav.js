@@ -9,10 +9,13 @@ function Nav({ setNav, nav }) {
   };
   console.log(nav);
   return (
-    <div className={classes.navDiv}>
+    <div className={classes.navDivOpened}>
       <div className={nav ? classes.nav : classes.navClosed}>
-        <div className={nav ? classes.overlay : ""} onClick={closeNavbar}></div>
-        <div className={classes.navIn}>
+        <div
+          className={nav ? classes.overlay : classes.overlayClosed}
+          onClick={closeNavbar}
+        ></div>
+        <div className={nav ? classes.navIn : classes.navInClosed}>
           <nav className={classes.navbar}>
             <h3 className={classes.navbarLabel}>Menu</h3>
             <ul className={classes.navbarList}>

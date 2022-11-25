@@ -220,14 +220,14 @@
   }
   .changedTitle::before {
     content: "[";
-    color: green;
+    color: #8f44fd;
     animation: opacity 3s infinite;
     font-size: 35px;
     padding-right: 5px;
   }
   .changedTitle::after {
     content: "]";
-    color: green;
+    color: #8f44fd;
     animation: opacity 3s infinite;
     font-size: 35px;
     padding-left: 5px;

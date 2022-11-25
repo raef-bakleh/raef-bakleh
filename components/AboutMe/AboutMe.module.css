@@ -87,12 +87,13 @@
   .cvDownload {
     display: flex;
     position: relative;
+
     height: 150px;
     border: 2px solid rgba(255, 255, 255, 0.2);
     width: 100%;
   }
   .cvDownload:hover {
-    border: 2px solid orange;
+    border-color: #96754e;
   }
   .cvDownload a {
     display: flex;
