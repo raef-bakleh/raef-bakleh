@@ -6,6 +6,15 @@
     padding: 20px;
     z-index: 1001;
   }
+  .hamburgerClose {
+    width: fit-content;
+    height: fit-content;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    padding: 0px;
+    z-index: 1001;
+  }
 
   .image {
     width: 300px;
@@ -129,6 +138,18 @@
     padding: 20px;
     z-index: 1001;
   }
+  .hamburgerClose {
+    width: fit-content;
+    height: fit-content;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    padding: 0px;
+    z-index: 1001;
+  }
+  .hamburgerClose:hover {
+    color: #96754e;
+  }
 
   .image {
     width: 400px;
@@ -162,7 +183,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 0px;
     animation: 1s ease;
   }
   .rightContainer {
@@ -246,6 +267,40 @@
     animation: typewriter 4s steps(44) 1s 1 normal both,
       blinkTextCursor 500ms steps(44) infinite normal;
   }
+  .footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    transition: all 1s ease;
+    display: flex;
+    width: 67.9%;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+  }
+  .arrow {
+    position: relative;
+    left: 110%;
+    bottom: 95px;
+  }
+  .arrowUp {
+    background: #1d1b19;
+    z-index: 2;
+    color: #fff;
+    padding: 0px 20px;
+    position: relative;
+  }
+  .arrowUp:hover {
+    color: #8f44fd;
+    animation: MoveUpDown 1s linear infinite;
+  }
+  .link {
+    text-decoration: 1px underline rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    color: white;
+    text-underline-offset: 0.2em;
+  }
+  .link:hover {
+    color: #96754e;
+  }
 }
 @media (min-width: 1040px) {
   .hamburger {
@@ -254,6 +309,18 @@
     top: 0;
     padding: 20px;
     z-index: 1001;
+  }
+  .hamburgerClose {
+    width: fit-content;
+    height: fit-content;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    padding: 0px;
+    z-index: 1001;
+  }
+  .hamburgerClose:hover {
+    color: #96754e;
   }
 
   .wrapper {
@@ -428,6 +495,48 @@
     overflow: hidden;
     animation: typewriter 4s steps(44) 1s 1 normal both,
       blinkTextCursor 500ms steps(44) infinite normal;
+  }
+  .footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    transition: all 1s ease;
+    display: flex;
+    width: 67.9%;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+  }
+  .arrow {
+    position: relative;
+    left: 70%;
+    bottom: 80px;
+  }
+  .arrowUp {
+    background: #1d1b19;
+    color: #fff;
+    padding: 0px 20px;
+    position: relative;
+  }
+  .arrowUp:hover {
+    color: #8f44fd;
+    animation: MoveUpDown 1s linear infinite;
+  }
+  .link {
+    text-decoration: 1px underline rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    color: white;
+    text-underline-offset: 0.2em;
+  }
+  .link:hover {
+    color: #96754e;
+  }
+}
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 20%;
   }
 }
 

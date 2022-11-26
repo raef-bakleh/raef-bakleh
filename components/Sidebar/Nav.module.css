@@ -54,7 +54,7 @@
   .navbarList {
     list-style: none;
     padding: 0;
-    margin-bottom: 200px;
+    margin-bottom: 50%;
   }
   .navbarLabel {
     padding: 0;
@@ -69,10 +69,10 @@
   .listElement {
     padding: 0;
     margin: 0 0 10px 0;
-    transform: translateX(0);
     opacity: 1;
     font-size: 30px;
     color: aliceblue;
+    width: 100px;
   }
   .listElement:hover {
     color: #96754e;
@@ -86,7 +86,7 @@
     flex-direction: row;
     gap: 25px;
   }
-  .socialIcons {
+  .socialIconGit {
     color: rgb(44, 43, 43);
     display: flex;
     justify-content: center;
@@ -95,6 +95,49 @@
     height: 50px;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 15px;
+  }
+  .socialIconGit:hover {
+    color: #fff;
+    background: rgb(30, 29, 29);
+  }
+  .socialIconLinkedIn {
+    color: rgb(44, 43, 43);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+  }
+  .socialIconLinkedIn:hover {
+    background-color: rgb(10, 102, 194);
+    color: #fff;
+  }
+
+  .socialIconInstagram {
+    color: rgb(44, 43, 43);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+  }
+  .socialIconInstagram:hover {
+    color: #fff;
+
+    background: #d6249f;
+    background: radial-gradient(
+      circle at 30% 107%,
+      #fdf497 0%,
+      #fdf497 5%,
+      #fd5949 45%,
+      #d6249f 60%,
+      #285aeb 90%
+    );
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
   }
 }
 @media (max-width: 1040px) {
@@ -113,12 +156,8 @@
     background-color: #1d1b19;
     z-index: 100;
     opacity: 0.9;
-    transform: translateX(0);
-    transition: all 1s ease;
   }
   .overlayClosed {
-    transform: translateX(-120%);
-    transition: none;
   }
   .nav {
     position: fixed;
@@ -129,9 +168,14 @@
     bottom: 0;
     z-index: 999;
     background-color: #181715;
+    transform: translateX(0%);
+    transition: all 0.8s ease;
   }
   .navClosed {
+    background-color: #181715;
     visibility: hidden;
+    transform: translateX(100%);
+    transition: opacity 1s ease-out;
   }
   .navIn {
     display: flex;
@@ -142,10 +186,18 @@
     width: 100%;
     padding: 100px 16%;
   }
+  .navInClosed {
+    padding: 100px 16%;
+    width: 100%;
+    transition: none;
+  }
+  .navbar {
+    transition: none;
+  }
   .navbarList {
     list-style: none;
     padding: 0;
-    margin-bottom: 200px;
+    margin-bottom: 50%;
   }
   .navbarLabel {
     padding: 0;
@@ -163,6 +215,7 @@
     opacity: 1;
     font-size: 30px;
     color: aliceblue;
+    width: 100px;
   }
 
   .listElement:hover {
@@ -177,9 +230,9 @@
     flex-direction: row;
     gap: 25px;
     position: relative;
-    top: 40px;
+    bottom: 40%;
   }
-  .socialIcons {
+  .socialIconGit {
     color: rgb(44, 43, 43);
     display: flex;
     justify-content: center;
@@ -188,6 +241,49 @@
     height: 50px;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 15px;
+  }
+  .socialIconGit:hover {
+    color: #fff;
+    background: rgb(30, 29, 29);
+  }
+  .socialIconLinkedIn {
+    color: rgb(44, 43, 43);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+  }
+  .socialIconLinkedIn:hover {
+    background-color: rgb(10, 102, 194);
+    color: #fff;
+  }
+
+  .socialIconInstagram {
+    color: rgb(44, 43, 43);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+  }
+  .socialIconInstagram:hover {
+    color: #fff;
+
+    background: #d6249f;
+    background: radial-gradient(
+      circle at 30% 107%,
+      #fdf497 0%,
+      #fdf497 5%,
+      #fd5949 45%,
+      #d6249f 60%,
+      #285aeb 90%
+    );
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
   }
   .image {
     width: 400px;

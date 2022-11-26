@@ -40,7 +40,7 @@ function Nav({ setNav, nav }) {
           </nav>
           <div className={classes.social}>
             <Link href={"https://github.com/raef-bakleh"} target="_blank">
-              <div className={classes.socialIcons}>
+              <div className={classes.socialIconGit}>
                 <BsGithub size={35} />
               </div>
             </Link>
@@ -48,7 +48,7 @@ function Nav({ setNav, nav }) {
               href={"https://www.linkedin.com/in/raef-bakleh-021293230/"}
               target="_blank"
             >
-              <div className={classes.socialIcons}>
+              <div className={classes.socialIconLinkedIn}>
                 <BsLinkedin size={35} />
               </div>
             </Link>
@@ -56,7 +56,7 @@ function Nav({ setNav, nav }) {
               href={"https://www.instagram.com/raefbakleh/"}
               target="_blank"
             >
-              <div className={classes.socialIcons}>
+              <div className={classes.socialIconInstagram}>
                 <BsInstagram size={35} />
               </div>
             </Link>
