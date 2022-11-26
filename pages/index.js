@@ -12,6 +12,7 @@ import dynamic from "next/dynamic";
 
 import { BsArrowUp } from "react-icons/bs";
 import Link from "next/link";
+
 export default function Home() {
   function useWindowSize() {
     const [windowSize, setWindowSize] = useState({

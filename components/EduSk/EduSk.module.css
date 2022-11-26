@@ -75,17 +75,6 @@
   justify-content: center;
   padding: 30px;
 }
-.skills {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  animation: slideUp 0.5s ease-in-out forwards;
-}
-.skills ul {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
 
 .experience {
   display: flex;
@@ -98,6 +87,34 @@
   background-color: #181715;
   justify-content: center;
   padding: 30px;
+}
+.marquee {
+  background-color: #181715;
+  height: 250px;
+  z-index: 0;
+  min-width: 100%;
+}
+.skills {
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  animation: all 0.5s ease-in-out forwards;
+}
+.skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 150px;
+  border: 1px solid #96754e;
+  height: 200px;
+  margin-right: 90px;
+  padding-top: 10px;
+  box-shadow: rgba(128, 35, 6, 0.3) 0px 0px 30px;
+  border-radius: 15px;
 }
 
 @keyframes slideUp {
