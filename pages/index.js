@@ -79,7 +79,7 @@ export default function Home() {
       {!footerUpDown && (
         <footer className={classes.footer}>
           <div className={classes.arrow}>
-            <Link href="/#about" scroll={false}>
+            <Link href="/#image" scroll={false}>
               <BsArrowUp className={classes.arrowUp} size={55} />
             </Link>
           </div>
@@ -142,7 +142,7 @@ export default function Home() {
         <div className={classes.imgWrapper}>
           <div className={state ? classes.longBoxScroll : classes.longBox}>
             <div className={state ? classes.wideBoxScroll : classes.wideBox}>
-              <Image src={profileImage} className={classes.image} />
+              <Image id="image" src={profileImage} className={classes.image} />
               <p>HI THERE, I AM</p>
               <div className={classes.changedTitle}>
                 <Typewriter
