@@ -76,9 +76,11 @@
   }
   .listElement:hover {
     color: #96754e;
+    cursor: pointer;
   }
   .link {
     text-decoration: none;
+    cursor: pointer;
   }
 
   .social {
@@ -220,6 +222,7 @@
 
   .listElement:hover {
     color: #96754e;
+    cursor: pointer;
   }
   .link {
     text-decoration: none;

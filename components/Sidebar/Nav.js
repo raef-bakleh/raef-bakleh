@@ -19,19 +19,34 @@ function Nav({ setNav, nav }) {
           <nav className={classes.navbar}>
             <h3 className={classes.navbarLabel}>Menu</h3>
             <ul className={classes.navbarList}>
-              <Link className={classes.link} href={"#about"} scroll={false}>
+              <Link
+                className={classes.link}
+                href={"#about"}
+                scroll={false}
+                legacyBehavior
+              >
                 <li className={classes.listElement} onClick={closeNavbar}>
                   about
                 </li>
               </Link>
 
-              <Link className={classes.link} href={"#edusk"} scroll={false}>
+              <Link
+                className={classes.link}
+                href={"#edusk"}
+                scroll={false}
+                legacyBehavior
+              >
                 <li className={classes.listElement} onClick={closeNavbar}>
                   Education
                 </li>
               </Link>
 
-              <Link className={classes.link} href={"#contact"} scroll={false}>
+              <Link
+                className={classes.link}
+                href={"#contact"}
+                scroll={false}
+                legacyBehavior
+              >
                 <li className={classes.listElement} onClick={closeNavbar}>
                   Contact
                 </li>
