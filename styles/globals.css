@@ -1,7 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian&display=swap");
-/* @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap"); */
-body,
-html {
+html,
+body {
   color: white;
   background: #1d1b19;
   letter-spacing: 1px;
@@ -11,7 +9,4 @@ html {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   scroll-behavior: smooth;
-  font-family: "Noto Sans Georgian", sans-serif;
-
-  font-weight: 400;
 }
