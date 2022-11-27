@@ -13,10 +13,18 @@
     bottom: 0;
     z-index: 999;
     background-color: #181715;
-    transition: all 1s ease;
+    transition: all 0.8s ease;
   }
   .navClosed {
-    visibility: hidden;
+    position: fixed;
+    right: -40%;
+    width: 40%;
+    min-height: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: #181715;
+    transition: all 0.8s ease-out;
   }
   .overlay {
     position: fixed;
@@ -29,11 +37,20 @@
     z-index: 100;
     opacity: 0.9;
     transform: translateX(0);
-    transition: all 1s ease;
+    transition: all 0.8s ease;
   }
   .overlayClosed {
     transform: translateX(-120%);
-    transition: none;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 1000px;
+    background-color: #1d1b19;
+    z-index: 100;
+    opacity: 0.9;
+    transition: all 0.8s ease;
   }
 
   .navIn {
@@ -45,11 +62,16 @@
     width: 100%;
     padding: 100px 16%;
     transform: translateX(0);
-    transition: all 1s ease;
   }
   .navInClosed {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 5;
+    position: relative;
+    width: 100%;
     padding: 100px 16%;
-    transform: translateX(100%);
+    transform: translateX(0);
   }
   .navbarList {
     list-style: none;
@@ -170,14 +192,20 @@
     bottom: 0;
     z-index: 999;
     background-color: #181715;
-    transform: translateX(0%);
+    transform: translateX(0);
     transition: all 0.8s ease;
   }
   .navClosed {
+    position: fixed;
+    right: -100%;
+    width: 100%;
+    min-height: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
     background-color: #181715;
-    visibility: hidden;
-    transform: translateX(100%);
-    transition: opacity 1s ease-out;
+    transform: translateX(0);
+    transition: all 0.8s ease;
   }
   .navIn {
     display: flex;
@@ -189,9 +217,13 @@
     padding: 100px 16%;
   }
   .navInClosed {
-    padding: 100px 16%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 5;
+    position: relative;
     width: 100%;
-    transition: none;
+    padding: 100px 16%;
   }
   .navbar {
     transition: none;
