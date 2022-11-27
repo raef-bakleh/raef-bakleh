@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import classes from "./EduSk.module.css";
 import Marquee from "react-fast-marquee";
-import { FaReact } from "react-icons/fa";
-import { DiCss3 } from "react-icons/di";
-import { ImHtmlFive } from "react-icons/im";
-import { SiHaskell } from "react-icons/si";
-import { DiJavascript } from "react-icons/di";
+import Image from "next/image";
+
+import SQL from "../../pages/img/SQL.png";
 
 function EduSk() {
   const [education, seteEducation] = useState(false);
@@ -126,7 +124,7 @@ function EduSk() {
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 48 48"
-                    width="115px"
+                    width="125px"
                     height="115px"
                   >
                     <polygon
@@ -162,6 +160,10 @@ function EduSk() {
                     />
                   </svg>
                   <h1>JavaScript</h1>
+                </div>
+                <div className={classes.skill}>
+                  <Image src={SQL} className={classes.SQL} />
+                  <h1>SQL</h1>
                 </div>
               </Marquee>
             </div>

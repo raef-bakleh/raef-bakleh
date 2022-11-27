@@ -66,9 +66,9 @@
     pointer-events: none;
     color: rgba(255, 255, 255, 0.5);
     transition: 0.5s;
-    top: -45px;
+    top: -38px;
     left: 20px;
-    font-size: 30px;
+    font-size: 20px;
   }
   .smallInputHasValue {
     width: 100%;
@@ -110,9 +110,9 @@
     pointer-events: none;
     color: rgba(255, 255, 255, 0.5);
     transition: 0.5s;
-    top: -45px;
+    top: -38px;
     left: 20px;
-    font-size: 30px;
+    font-size: 20px;
   }
   .smallInputHasValue ~ label[id="email"] {
     color: #96754e;
@@ -181,9 +181,9 @@
     pointer-events: none;
     color: rgba(255, 255, 255, 0.5);
     transition: 0.5s;
-    top: -45px;
+    top: -38px;
     left: 20px;
-    font-size: 30px;
+    font-size: 20px;
   }
   .inputBig > :is(input[id="phone"]:focus) ~ label[id="phone"] {
     color: #96754e;
@@ -220,7 +220,7 @@
     transition: 0.5s;
     top: -290px;
     left: 20px;
-    font-size: 30px;
+    font-size: 20px;
   }
   .inputBig > :is(textarea[id="message"]:focus) ~ label[id="message"] {
     color: #96754e;
@@ -248,7 +248,7 @@
     color: rgba(255, 255, 255, 0.5);
     border: 1px solid #2e2a33;
     background-color: #1d1b19;
-    font-size: 30px;
+    font-size: 20px;
     margin-bottom: 20px;
   }
   .send:hover {

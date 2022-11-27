@@ -117,6 +117,10 @@
     box-shadow: rgba(128, 35, 6, 0.3) 0px 0px 30px;
     border-radius: 15px;
   }
+  .SQL {
+    width: 125px;
+    height: 115px;
+  }
 }
 @media (min-width: 500px) {
   .section {
@@ -236,6 +240,10 @@
     padding-top: 10px;
     box-shadow: rgba(128, 35, 6, 0.3) 0px 0px 30px;
     border-radius: 15px;
+  }
+  .SQL {
+    width: 125px;
+    height: 115px;
   }
 }
 
