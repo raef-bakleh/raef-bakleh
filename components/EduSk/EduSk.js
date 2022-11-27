@@ -67,7 +67,6 @@ function EduSk() {
               <div className={classes.educationElement}>
                 <h3>Technical University Of Munich (2017-2018)</h3>
                 <h1 className={classes.titel}>
-                  {" "}
                   Electrical Engineering and Information Technology
                 </h1>
               </div>
@@ -97,7 +96,7 @@ function EduSk() {
                     alt="CSS3 logo"
                     src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg"
                   />
-                  <h1>CSS</h1>
+                  <h1>CSS3</h1>
                 </div>
                 <div className={classes.skill}>
                   <svg
@@ -119,7 +118,7 @@ function EduSk() {
                   <img
                     width={115}
                     height={115}
-                    alt="CSS3 logo"
+                    alt="HTML5 logo"
                     src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg"
                   />
                   <h1>HTML5</h1>
