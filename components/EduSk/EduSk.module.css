@@ -35,6 +35,9 @@
   .choose:focus {
     color: red;
   }
+  .titel {
+    color: rgba(255, 255, 255, 0.5);
+  }
   .clicked {
     color: #96754e;
     text-decoration: underline 2px #96754e;
@@ -191,6 +194,9 @@
     flex-direction: column;
     gap: 20px;
     animation: slideUp 0.5s ease-in-out forwards;
+  }
+  .titel {
+    color: rgba(255, 255, 255, 0.5);
   }
 
   .educationElement {
