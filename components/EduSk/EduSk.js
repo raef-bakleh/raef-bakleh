@@ -67,7 +67,6 @@ function EduSk() {
               <div className={classes.educationElement}>
                 <h3>Technical University Of Munich (2017-2018)</h3>
                 <h1 className={classes.titel}>
-                  {" "}
                   Electrical Engineering and Information Technology
                 </h1>
               </div>

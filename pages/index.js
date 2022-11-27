@@ -144,7 +144,7 @@ export default function Home() {
           <div className={state ? classes.longBoxScroll : classes.longBox}>
             <div className={state ? classes.wideBoxScroll : classes.wideBox}>
               <Image id="image" src={profileImage} className={classes.image} />
-              <p>HI THERE, I AM</p>
+              <p>HI THERE , I AM</p>
               <div className={classes.changedTitle}>
                 <Typewriter
                   options={{

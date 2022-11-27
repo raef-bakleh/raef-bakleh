@@ -92,6 +92,26 @@
     justify-content: center;
     padding: 30px;
   }
+  .educationElement::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 50px;
+    left: 0%;
+    margin-top: 30px;
+    height: 50px;
+    background-color: #96754e;
+  }
+  .experience::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 50px;
+    left: 0%;
+    margin-top: 60px;
+    height: 50px;
+    background-color: #96754e;
+  }
   .marquee {
     background-color: #181715;
     height: 250px;
@@ -201,17 +221,44 @@
 
   .educationElement {
     box-sizing: border-box;
-
     background-color: #181715;
     justify-content: center;
     padding: 30px;
   }
 
+  .sideDiv {
+    height: 15%;
+    width: 5px;
+    background-color: #96754e;
+    position: fixed;
+    top: 10%;
+    left: 0;
+  }
   .experience {
     display: flex;
     flex-direction: column;
     gap: 20px;
     animation: slideUp 0.5s ease-in-out forwards;
+  }
+  .educationElement::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 50px;
+    left: 0%;
+    margin-top: 30px;
+    height: 50px;
+    background-color: #96754e;
+  }
+  .experience::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 50px;
+    left: 0%;
+    margin-top: 60px;
+    height: 50px;
+    background-color: #96754e;
   }
   .experienceElement {
     box-sizing: border-box;
