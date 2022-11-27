@@ -29,8 +29,8 @@ function AboutMe() {
         <p className={classes.paragraph}>
           A hungry to learn informatics student. <br /> I am a punctual and
           motivated individual who is able to work in a busy environment and
-          produce high standardsof work. <br /> I am an excellent team worker
-          and am able to take instructions fromall levels and build up good
+          produce high standards of work. <br /> I am an excellent team worker
+          and am able to take instructions from all levels and build up good
           working relationships with all colleagues. <br /> I am flexible,
           reliable and possess excellent time keeping skills
         </p>
