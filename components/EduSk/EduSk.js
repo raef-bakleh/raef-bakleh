@@ -9,8 +9,8 @@ import { DiJavascript } from "react-icons/di";
 
 function EduSk() {
   const [education, seteEducation] = useState(false);
-  const [skills, setSkills] = useState(false);
-  const [experience, setExperience] = useState(true);
+  const [skills, setSkills] = useState(true);
+  const [experience, setExperience] = useState(false);
 
   const educationClicked = () => {
     seteEducation(!education);

@@ -1,120 +1,242 @@
-.section {
-  padding: 0px 70px;
-  align-items: center;
-  width: 100%;
-  box-sizing: border-box;
-}
-.eduSk {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.filter {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  list-style: none;
-  padding: 0;
-  gap: 20px;
-}
-.line {
-  width: 40px;
-  height: 2px;
-  content: "";
-  color: white;
-  background-color: white;
-}
-.choose {
-  font-size: 35px;
-  color: rgba(255, 255, 255, 0.5);
-}
-.choose:hover {
-  cursor: pointer;
-}
-.choose:focus {
-  color: red;
-}
-.clicked {
-  color: #96754e;
-  text-decoration: underline 2px #96754e;
-  text-underline-offset: 0.2em;
-}
-.clickedHover {
-  display: inline-block;
-  position: relative;
-  color: rgba(255, 255, 255, 0.5);
-}
-.clickedHover::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #96754e;
-  transform-origin: center;
-  transition: transform 0.25s ease-out;
-}
-.clickedHover:hover::after {
-  transform: scaleX(1);
-  transform-origin: center bottom;
-}
+@media (max-width: 500px) {
+  .section {
+    padding: 0px 20px;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .eduSk {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    gap: 10px;
+  }
+  .line {
+    width: 40px;
+    height: 2px;
+    content: "";
+    color: white;
+    background-color: white;
+  }
+  .choose {
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .choose:hover {
+    cursor: pointer;
+  }
+  .choose:focus {
+    color: red;
+  }
+  .clicked {
+    color: #96754e;
+    text-decoration: underline 2px #96754e;
+    text-underline-offset: 0.2em;
+  }
+  .clickedHover {
+    display: inline-block;
+    position: relative;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .clickedHover::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #96754e;
+    transform-origin: center;
+    transition: transform 0.25s ease-out;
+  }
+  .clickedHover:hover::after {
+    transform: scaleX(1);
+    transform-origin: center bottom;
+  }
 
-.education {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  animation: slideUp 0.5s ease-in-out forwards;
-}
+  .education {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    animation: slideUp 0.5s ease-in-out forwards;
+  }
 
-.educationElement {
-  box-sizing: border-box;
+  .educationElement {
+    box-sizing: border-box;
 
-  background-color: #181715;
-  justify-content: center;
-  padding: 30px;
-}
+    background-color: #181715;
+    justify-content: center;
+    padding: 30px;
+  }
 
-.experience {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  animation: slideUp 0.5s ease-in-out forwards;
+  .experience {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    animation: slideUp 0.5s ease-in-out forwards;
+  }
+  .experienceElement {
+    box-sizing: border-box;
+    background-color: #181715;
+    justify-content: center;
+    padding: 30px;
+  }
+  .marquee {
+    background-color: #181715;
+    height: 250px;
+    z-index: 0;
+    min-width: 100%;
+  }
+  .skills {
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    animation: all 0.5s ease-in-out forwards;
+  }
+  .skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 150px;
+    border: 1px solid #96754e;
+    height: 200px;
+    margin-right: 90px;
+    padding-top: 10px;
+    box-shadow: rgba(128, 35, 6, 0.3) 0px 0px 30px;
+    border-radius: 15px;
+  }
 }
-.experienceElement {
-  box-sizing: border-box;
-  background-color: #181715;
-  justify-content: center;
-  padding: 30px;
-}
-.marquee {
-  background-color: #181715;
-  height: 250px;
-  z-index: 0;
-  min-width: 100%;
-}
-.skills {
-  box-sizing: border-box;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  animation: all 0.5s ease-in-out forwards;
-}
-.skill {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 180px;
-  height: 150px;
-  border: 1px solid #96754e;
-  height: 200px;
-  margin-right: 90px;
-  padding-top: 10px;
-  box-shadow: rgba(128, 35, 6, 0.3) 0px 0px 30px;
-  border-radius: 15px;
+@media (min-width: 500px) {
+  .section {
+    padding: 0px 70px;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .eduSk {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    gap: 20px;
+  }
+  .line {
+    width: 40px;
+    height: 2px;
+    content: "";
+    color: white;
+    background-color: white;
+  }
+  .choose {
+    font-size: 35px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .choose:hover {
+    cursor: pointer;
+  }
+  .choose:focus {
+    color: red;
+  }
+  .clicked {
+    color: #96754e;
+    text-decoration: underline 2px #96754e;
+    text-underline-offset: 0.2em;
+  }
+  .clickedHover {
+    display: inline-block;
+    position: relative;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .clickedHover::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #96754e;
+    transform-origin: center;
+    transition: transform 0.25s ease-out;
+  }
+  .clickedHover:hover::after {
+    transform: scaleX(1);
+    transform-origin: center bottom;
+  }
+
+  .education {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    animation: slideUp 0.5s ease-in-out forwards;
+  }
+
+  .educationElement {
+    box-sizing: border-box;
+
+    background-color: #181715;
+    justify-content: center;
+    padding: 30px;
+  }
+
+  .experience {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    animation: slideUp 0.5s ease-in-out forwards;
+  }
+  .experienceElement {
+    box-sizing: border-box;
+    background-color: #181715;
+    justify-content: center;
+    padding: 30px;
+  }
+  .marquee {
+    background-color: #181715;
+    height: 250px;
+    z-index: 0;
+    min-width: 100%;
+  }
+  .skills {
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    animation: all 0.5s ease-in-out forwards;
+  }
+  .skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 150px;
+    border: 1px solid #96754e;
+    height: 200px;
+    margin-right: 90px;
+    padding-top: 10px;
+    box-shadow: rgba(128, 35, 6, 0.3) 0px 0px 30px;
+    border-radius: 15px;
+  }
 }
 
 @keyframes slideUp {
