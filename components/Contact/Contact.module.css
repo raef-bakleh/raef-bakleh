@@ -264,7 +264,8 @@
 }
 @media (min-width: 500px) {
   .section {
-    padding: 100px 70px;
+    padding: 0px 70px;
+    padding-bottom: 50px;
     align-items: center;
     width: 100%;
     box-sizing: border-box;

@@ -135,8 +135,8 @@
     border-radius: 15px;
   }
   .socialIconLinkedIn:hover {
-    background-color: rgb(10, 102, 194);
-    color: #fff;
+    background-color: #fff;
+    color: rgb(10, 102, 194);
   }
 
   .socialIconInstagram {
@@ -292,8 +292,8 @@
     border-radius: 15px;
   }
   .socialIconLinkedIn:hover {
-    background-color: rgb(10, 102, 194);
-    color: #fff;
+    background-color: #fff;
+    color: rgb(10, 102, 194);
   }
 
   .socialIconInstagram {

@@ -12,6 +12,7 @@ import dynamic from "next/dynamic";
 
 import { BsArrowUp } from "react-icons/bs";
 import Link from "next/link";
+import Portfolio from "../components/Portfolio/Portfolio";
 
 export default function Home() {
   function useWindowSize() {
@@ -126,6 +127,9 @@ export default function Home() {
         <section id="edusk">
           <EduSk />
         </section>
+        {/* <section>
+          <Portfolio />
+        </section> */}
         <section id="contact">
           <Contact />
         </section>
@@ -154,7 +158,6 @@ export default function Home() {
                   onInit={(typewriter) => {
                     typewriter
                       .typeString(names[0])
-
                       .pauseFor(3000)
                       .deleteAll()
                       .typeString(names[1])

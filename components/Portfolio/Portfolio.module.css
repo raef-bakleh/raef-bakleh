@@ -1,0 +1,126 @@
+.section {
+  padding: 50px 70px;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: center;
+}
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+.head {
+  color: #96754e;
+  font-size: 20px;
+}
+.line {
+  content: "";
+  width: 15%;
+  height: 1px;
+  background-color: #8f44fd;
+  margin-top: -3%;
+}
+.introTop {
+  margin-top: -5px;
+  color: rgb(209, 211, 213);
+  font-size: 45px;
+}
+.introTop:after {
+  width: 15%;
+  height: 2px;
+  background-color: #8f44fd;
+  color: #8f44fd;
+  content: "";
+  position: relative;
+}
+.swiperContainer {
+  background-color: #1d1b19;
+  width: 100%;
+  height: 300px;
+  margin-top: 50px;
+}
+.swiperProject {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 80%;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+.projectPhoto {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.swiperButtons {
+  position: relative;
+  right: -80%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: fit-content;
+}
+.swiperButton {
+  width: 40px;
+  height: 40px;
+  padding: 10px 7px;
+  border: 1px solid transparent;
+  transition: all 0.6s ease;
+}
+.swiperButton:hover {
+  border: 1px solid #96754e;
+  cursor: pointer;
+  color: #96754e;
+  transition: all 0.4s ease;
+}
+.projektOverlay {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 62.5%;
+  opacity: 0.5;
+  border-radius: 15px;
+  align-items: flex-start;
+  background-color: #42403e;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  transition: opacity 0.2s ease-out;
+  visibility: hidden;
+}
+.swiperProject:hover > .projektOverlay {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 62.5%;
+  opacity: 0.9;
+  border-radius: 15px;
+  align-items: flex-start;
+  background-color: #42403e;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  transition: opacity 0.2s ease-in;
+
+  visibility: visible;
+}
+.link {
+  text-decoration: none;
+}
+.projektOverlayP {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid white;
+  padding: 10px;
+}
+.projektOverlayP:hover {
+  color: #96754e;
+  border: 1px solid #96754e;
+}
