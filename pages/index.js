@@ -127,9 +127,9 @@ export default function Home() {
         <section id="edusk">
           <EduSk />
         </section>
-        {/* <section>
+        <section>
           <Portfolio />
-        </section> */}
+        </section>
         <section id="contact">
           <Contact />
         </section>

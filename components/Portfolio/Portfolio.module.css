@@ -4,6 +4,7 @@
   width: 100%;
   box-sizing: border-box;
   justify-content: center;
+  z-index: 0;
 }
 .portfolio {
   display: flex;
@@ -11,10 +12,12 @@
   justify-content: center;
   width: 100%;
   box-sizing: border-box;
+  z-index: 0;
 }
 .head {
   color: #96754e;
   font-size: 20px;
+  z-index: 0;
 }
 .line {
   content: "";
@@ -22,6 +25,7 @@
   height: 1px;
   background-color: #8f44fd;
   margin-top: -3%;
+  z-index: 0;
 }
 .introTop {
   margin-top: -5px;
@@ -36,11 +40,16 @@
   content: "";
   position: relative;
 }
+.swiper {
+  z-index: 0;
+}
 .swiperContainer {
   background-color: #1d1b19;
   width: 100%;
   height: 300px;
+  z-index: 0;
   margin-top: 50px;
+  z-index: 0;
 }
 .swiperProject {
   display: flex;
@@ -50,11 +59,13 @@
   cursor: pointer;
   justify-content: center;
   align-items: center;
+  z-index: 0;
 }
 .projectPhoto {
   width: 100%;
   height: 100%;
   border-radius: 15px;
+  z-index: 0;
 }
 .swiperButtons {
   position: relative;
@@ -63,6 +74,7 @@
   flex-direction: row;
   gap: 20px;
   width: fit-content;
+  z-index: 0;
 }
 .swiperButton {
   width: 40px;
@@ -77,10 +89,11 @@
   color: #96754e;
   transition: all 0.4s ease;
 }
-.projektOverlay {
+.projektOverlayImage {
   position: fixed;
   width: 100%;
   top: 0;
+  height: 100%;
   height: 62.5%;
   opacity: 0.5;
   border-radius: 15px;
@@ -93,7 +106,8 @@
   transition: opacity 0.2s ease-out;
   visibility: hidden;
 }
-.swiperProject:hover > .projektOverlay {
+
+.swiperProject:hover > .projektOverlayImage {
   position: fixed;
   width: 100%;
   top: 0;
@@ -119,8 +133,48 @@
   text-transform: uppercase;
   border: 1px solid white;
   padding: 10px;
+  z-index: 0;
 }
 .projektOverlayP:hover {
   color: #96754e;
   border: 1px solid #96754e;
+}
+.projectGif {
+  width: 100%;
+  height: 80%;
+  border-radius: 27px;
+}
+.projektOverlayGif {
+  position: fixed;
+  width: 101%;
+  height: 64%;
+  top: -2px;
+  background-image: url(https://media.tenor.com/kbbJOE4dIJkAAAAC/working-on.gif);
+  border-radius: 27px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  transition: all 0.2s ease;
+  visibility: hidden;
+}
+.swiperProject:hover > .projektOverlayGif {
+  position: fixed;
+  width: 101%;
+  height: 64%;
+  top: -2px;
+  background-image: url(https://media.tenor.com/kbbJOE4dIJkAAAAC/working-on.gif);
+  border-radius: 27px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  transition: all 0.2s ease-out;
+  visibility: visible;
 }

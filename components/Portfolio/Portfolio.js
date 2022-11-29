@@ -14,6 +14,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import Link from "next/link";
+import inCon from "../../pages/img/inconstruction.gif";
 
 import SwiperCore, { Autoplay } from "swiper";
 
@@ -48,8 +49,9 @@ function Portfolio() {
         </div>
       </div>
 
-      <div>
+      <div className={classes.swiper}>
         <Swiper
+          tabIndex={0}
           spaceBetween={30}
           className={classes.swiperContainer}
           slidesPerView={3}
@@ -64,49 +66,69 @@ function Portfolio() {
         >
           <SwiperSlide className={classes.swiperSlide}>
             <div className={classes.swiperProject}>
-              <Image src={Projekt1} className={classes.projectPhoto}></Image>
+              <Image
+                src={Projekt1}
+                className={classes.projectPhoto}
+                sizes={"50vw"}
+              ></Image>
               <p>Food Ordering Website</p>
-              <div className={classes.projektOverlay}>
-                <Link className={classes.link} href="#">
+              <div className={classes.projektOverlayImage}>
+                <Link
+                  className={classes.link}
+                  href="https://food-order-website.vercel.app/"
+                  target={"_blank"}
+                >
                   <p className={classes.projektOverlayP}>Demo</p>
-                  <div className={classes.projektOverlay}>
-                    <Link className={classes.link} href="#">
-                      <p className={classes.projektOverlayP}>Demo</p>
-                    </Link>
-                    <Link className={classes.link} href="#">
-                      <p className={classes.projektOverlayP}>github</p>
-                    </Link>
-                  </div>
                 </Link>
-                <Link className={classes.link} href="#">
+                <Link
+                  className={classes.link}
+                  href="https://github.com/raef-bakleh/food-order-website"
+                  target={"_blank"}
+                >
                   <p className={classes.projektOverlayP}>github</p>
-                  <div className={classes.projektOverlay}>
-                    <Link className={classes.link} href="#">
-                      <p className={classes.projektOverlayP}>Demo</p>
-                    </Link>
-                    <Link className={classes.link} href="#">
-                      <p className={classes.projektOverlayP}>github</p>
-                    </Link>
-                  </div>
                 </Link>
               </div>
             </div>
           </SwiperSlide>
+
           <SwiperSlide className={classes.swiperSlide}>
             <div className={classes.swiperProject}>
               <Image src={Projekt2} className={classes.projectPhoto}></Image>
-              <p>Food Ordering Website</p>
-              <div className={classes.projektOverlay}>
-                <Link className={classes.link} href="#">
+              <p>Expanses Manager</p>
+              <div className={classes.projektOverlayImage}>
+                <Link
+                  className={classes.link}
+                  href="https://expenses-manager-gamma.vercel.app/"
+                  target={"_blank"}
+                >
                   <p className={classes.projektOverlayP}>Demo</p>
                 </Link>
-                <Link className={classes.link} href="#">
+                <Link
+                  className={classes.link}
+                  href="https://github.com/raef-bakleh/expenses-manager"
+                  target={"_blank"}
+                >
                   <p className={classes.projektOverlayP}>github</p>
                 </Link>
               </div>
             </div>
           </SwiperSlide>
+
           <SwiperSlide className={classes.swiperSlide}>
+            <div className={classes.swiperProject}>
+              <Image src={inCon} className={classes.projectGif}></Image>
+              <p>Car Sharing Website</p>
+              <div className={classes.projektOverlayGif}>
+                {/* <Link className={classes.link} href="#">
+                  <p className={classes.projektOverlayP}>Demo</p>
+                </Link>
+                <Link className={classes.link} href="#">
+                  <p className={classes.projektOverlayP}>github</p>
+                </Link> */}
+              </div>
+            </div>
+          </SwiperSlide>
+          {/*  <SwiperSlide className={classes.swiperSlide}>
             <div className={classes.swiperProject}>
               <Image src={Projekt1} className={classes.projectPhoto}></Image>
               <p>Food Ordering Website</p>
@@ -119,21 +141,7 @@ function Portfolio() {
                 </Link>
               </div>
             </div>
-          </SwiperSlide>
-          <SwiperSlide className={classes.swiperSlide}>
-            <div className={classes.swiperProject}>
-              <Image src={Projekt1} className={classes.projectPhoto}></Image>
-              <p>Food Ordering Website</p>
-              <div className={classes.projektOverlay}>
-                <Link className={classes.link} href="#">
-                  <p className={classes.projektOverlayP}>Demo</p>
-                </Link>
-                <Link className={classes.link} href="#">
-                  <p className={classes.projektOverlayP}>github</p>
-                </Link>
-              </div>
-            </div>
-          </SwiperSlide>
+          </SwiperSlide> */}
         </Swiper>
       </div>
     </div>
