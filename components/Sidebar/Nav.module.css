@@ -17,14 +17,14 @@
   }
   .navClosed {
     position: fixed;
-    right: -40%;
+    right: -80%;
     width: 40%;
     min-height: 100%;
     top: 0;
     bottom: 0;
     z-index: 999;
     background-color: #181715;
-    transition: all 0.8s ease-out;
+    transition: all 1.5s ease-out;
   }
   .overlay {
     position: fixed;
@@ -40,7 +40,7 @@
     transition: all 0.8s ease;
   }
   .overlayClosed {
-    transform: translateX(-120%);
+    transform: translateX(-220%);
     position: fixed;
     bottom: 0;
     top: 0;
@@ -50,7 +50,7 @@
     background-color: #1d1b19;
     z-index: 100;
     opacity: 0.9;
-    transition: all 0.8s ease;
+    transition: all 1.5s ease;
   }
 
   .navIn {
