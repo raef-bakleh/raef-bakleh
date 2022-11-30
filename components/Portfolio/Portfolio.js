@@ -15,14 +15,17 @@ import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import Link from "next/link";
 import inCon from "../../pages/img/inconstruction.gif";
-
 import SwiperCore, { Autoplay } from "swiper";
 
-function Portfolio() {
+function Portfolio(windowSize) {
+  console.log(windowSize.windowSize.height);
+  const width = windowSize.windowSize.width;
+  const height = windowSize.windowSize.height;
   SwiperCore.use([Autoplay]);
 
   // const swiper = useSwiper();
   const [swiper, setSwiper] = useState(null);
+
   return (
     <div className={classes.section}>
       <div className={classes.portfolio}>
@@ -54,7 +57,7 @@ function Portfolio() {
           tabIndex={0}
           spaceBetween={30}
           className={classes.swiperContainer}
-          slidesPerView={3}
+          slidesPerView={width > 800 ? 3 : 1}
           loop={true}
           autoplay={{
             delay: 5000,

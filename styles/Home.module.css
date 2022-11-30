@@ -214,10 +214,8 @@
     position: relative;
     float: none;
     clear: none;
-    padding: 20px;
     display: flex;
     flex-direction: column;
-    padding: 20px;
     animation: all 1s ease;
   }
 
