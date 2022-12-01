@@ -152,7 +152,6 @@
     bottom: 60px;
   }
   .arrowUp {
-    background-color: #1d1b19;
     z-index: 10;
     color: #fff;
     position: relative;
@@ -323,11 +322,11 @@
     z-index: 0;
   }
   .arrowUp {
-    background: #1d1b19;
-    z-index: 2;
-    color: #fff;
-    padding: 0px 20px;
+    background-color: #1d1b19 !important;
+    border: 1px solid white;
+    color: #bbbb;
     position: relative;
+    padding: 0px 10px;
   }
   .arrowUp:hover {
     color: #8f44fd;
@@ -338,6 +337,7 @@
     font-size: 20px;
     color: white;
     text-underline-offset: 0.2em;
+    z-index: 0;
   }
   .link:hover {
     color: #96754e;

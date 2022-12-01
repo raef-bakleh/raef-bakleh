@@ -6,6 +6,19 @@
   justify-content: center;
   z-index: 0;
 }
+.introTop {
+  margin-top: -5px;
+  color: rgb(209, 211, 213);
+  font-size: 45px;
+}
+.introTop:after {
+  width: 15%;
+  height: 2px;
+  background-color: #8f44fd;
+  color: #8f44fd;
+  content: "";
+  position: relative;
+}
 .portfolio {
   display: flex;
   flex-direction: column;
@@ -27,35 +40,23 @@
   margin-top: -3%;
   z-index: 0;
 }
-.introTop {
-  margin-top: -5px;
-  color: rgb(209, 211, 213);
-  font-size: 45px;
-}
-.introTop:after {
-  width: 15%;
-  height: 2px;
-  background-color: #8f44fd;
-  color: #8f44fd;
-  content: "";
-  position: relative;
-}
+
 .swiper {
   z-index: 0;
 }
 .swiperContainer {
   background-color: #1d1b19;
   width: 100%;
-  height: 300px;
+  height: 100%;
   z-index: 0;
-  margin-top: 50px;
+  margin-top: 40px;
   z-index: 0;
 }
 .swiperProject {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 80%;
+  height: 100%;
   cursor: pointer;
   justify-content: center;
   align-items: center;
@@ -94,16 +95,15 @@
   width: 100%;
   top: 0;
   height: 100%;
-  height: 62.5%;
+  height: auto;
   opacity: 0.5;
   border-radius: 15px;
   align-items: flex-start;
-  background-color: #42403e;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-end;
-  transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease;
   visibility: hidden;
 }
 
@@ -111,19 +111,26 @@
   position: fixed;
   width: 100%;
   top: 0;
-  height: 62.5%;
+  height: 100%;
   opacity: 0.9;
   border-radius: 15px;
   align-items: flex-start;
-  background-color: #42403e;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-end;
-  transition: opacity 0.2s ease-in;
+  transition: opacity 0.2s ease;
+  background-color: grey;
 
   visibility: visible;
 }
+.swiperProject:hover > .projektName {
+  visibility: hidden;
+}
+
+/* .swiperProject p:hover {
+  font-size: 20px;
+} */
 .link {
   text-decoration: none;
 }
@@ -132,27 +139,40 @@
   text-decoration: none;
   text-transform: uppercase;
   border: 1px solid white;
-  padding: 10px;
+  padding: 5px;
+  margin-bottom: 40%;
   z-index: 0;
+  font-size: large;
+  text-align: center;
 }
 .projektOverlayP:hover {
-  color: #96754e;
-  border: 1px solid #96754e;
+  color: #7f4706;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #7f4706;
+  padding: 5px;
+  z-index: 0;
+  margin-bottom: 40%;
+
+  font-size: large;
+  text-align: center;
 }
 .projectGif {
   width: 100%;
-  height: 80%;
+  height: 100%;
   border-radius: 27px;
+  image-resolution: 20dpi;
 }
 .projektOverlayGif {
   position: fixed;
-  width: 101%;
-  height: 64%;
+  width: 100%;
+  height: 100%;
   top: -2px;
+  background-color: grey;
+
   background-image: url(https://media.tenor.com/kbbJOE4dIJkAAAAC/working-on.gif);
   border-radius: 27px;
   background-repeat: no-repeat;
-  background-size: cover;
   align-items: flex-start;
   display: flex;
   flex-direction: row;
@@ -161,10 +181,10 @@
   transition: all 0.2s ease;
   visibility: hidden;
 }
-.swiperProject:hover > .projektOverlayGif {
+/* .swiperProject:hover > .projektOverlayGif {
   position: fixed;
-  width: 101%;
-  height: 64%;
+  width: 100%;
+  height: 100%;
   top: -2px;
   background-image: url(https://media.tenor.com/kbbJOE4dIJkAAAAC/working-on.gif);
   border-radius: 27px;
@@ -176,5 +196,6 @@
   justify-content: space-around;
   align-items: flex-end;
   transition: all 0.2s ease-out;
+  opacity: 0.5;
   visibility: visible;
-}
+} */

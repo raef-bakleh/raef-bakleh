@@ -149,7 +149,7 @@
     margin: 0;
     padding: 0;
     outline: none;
-    width: 80%;
+    width: 100%;
   }
   .about {
     display: flex;
@@ -180,6 +180,7 @@
   }
   .tableBody {
     box-sizing: border-box;
+    width: 100%;
   }
   .tableTr {
     border: none;

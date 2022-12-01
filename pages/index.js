@@ -9,7 +9,6 @@ import Hamburger from "hamburger-react";
 import Nav from "../components/Sidebar/Nav";
 import Typewriter from "typewriter-effect";
 import dynamic from "next/dynamic";
-
 import { BsArrowUp } from "react-icons/bs";
 import Link from "next/link";
 import Portfolio from "../components/Portfolio/Portfolio";

@@ -14,7 +14,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import Link from "next/link";
-import inCon from "../../pages/img/inconstruction.gif";
+import inCon from "../../pages/img/inconstruction.jpg";
 import SwiperCore, { Autoplay } from "swiper";
 
 function Portfolio(windowSize) {
@@ -70,11 +70,12 @@ function Portfolio(windowSize) {
           <SwiperSlide className={classes.swiperSlide}>
             <div className={classes.swiperProject}>
               <Image
+                height={250}
                 src={Projekt1}
                 className={classes.projectPhoto}
                 sizes={"50vw"}
               ></Image>
-              <p>Food Ordering Website</p>
+              <p className={classes.projektName}>Food Ordering Website</p>
               <div className={classes.projektOverlayImage}>
                 <Link
                   className={classes.link}
@@ -96,8 +97,12 @@ function Portfolio(windowSize) {
 
           <SwiperSlide className={classes.swiperSlide}>
             <div className={classes.swiperProject}>
-              <Image src={Projekt2} className={classes.projectPhoto}></Image>
-              <p>Expanses Manager</p>
+              <Image
+                height={250}
+                src={Projekt2}
+                className={classes.projectPhoto}
+              ></Image>
+              <p className={classes.projektName}>Expanses Manager</p>
               <div className={classes.projektOverlayImage}>
                 <Link
                   className={classes.link}
@@ -120,7 +125,7 @@ function Portfolio(windowSize) {
           <SwiperSlide className={classes.swiperSlide}>
             <div className={classes.swiperProject}>
               <Image src={inCon} className={classes.projectGif}></Image>
-              <p>Car Sharing Website</p>
+              <p className={classes.projektName}>Car Sharing Website</p>
               <div className={classes.projektOverlayGif}>
                 {/* <Link className={classes.link} href="#">
                   <p className={classes.projektOverlayP}>Demo</p>
