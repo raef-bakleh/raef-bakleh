@@ -1,9 +1,26 @@
 @media (max-width: 500px) {
   .section {
     padding: 0px 20px;
+    padding-bottom: 50px;
     align-items: center;
     width: 100%;
     box-sizing: border-box;
+  }
+  .head {
+    color: #96754e;
+    font-size: 20px;
+  }
+  .introTop {
+    margin-top: -5px;
+    color: rgb(209, 211, 213);
+    font-size: 45px;
+  }
+  .lineTop {
+    content: "";
+    width: 45%;
+    height: 1px;
+    background-color: #8f44fd;
+    margin-top: -5%;
   }
   .eduSk {
     display: flex;
@@ -11,6 +28,7 @@
     justify-content: flex-start;
   }
   .filter {
+    margin-top: 10%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -153,12 +171,29 @@
     width: 100%;
     box-sizing: border-box;
   }
+  .head {
+    color: #96754e;
+    font-size: large;
+  }
+  .introTop {
+    margin-top: -5px;
+    color: rgb(209, 211, 213);
+    font-size: 45px;
+  }
+  .lineTop {
+    content: "";
+    width: 45%;
+    height: 1px;
+    background-color: #8f44fd;
+    margin-top: -5%;
+  }
   .eduSk {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
   }
   .filter {
+    margin-top: 10%;
     display: flex;
     flex-direction: row;
     align-items: center;

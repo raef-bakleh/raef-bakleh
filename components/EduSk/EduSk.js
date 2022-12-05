@@ -29,6 +29,10 @@ function EduSk() {
   return (
     <div className={classes.section}>
       <div className={classes.eduSk}>
+        <h3 className={classes.head}>EDUCATION & SKILLS</h3>
+        <h1 className={classes.introTop}>Curriculum Vitae</h1>
+        <div className={classes.lineTop}></div>
+
         <ul className={classes.filter}>
           <li className={classes.choose}>
             <a
