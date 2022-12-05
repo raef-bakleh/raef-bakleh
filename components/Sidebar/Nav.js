@@ -40,6 +40,16 @@ function Nav({ setNav, nav }) {
                   Education
                 </li>
               </Link>
+              <Link
+                className={classes.link}
+                href={"#portfolio"}
+                scroll={false}
+                legacyBehavior
+              >
+                <li className={classes.listElement} onClick={closeNavbar}>
+                  Portfolio
+                </li>
+              </Link>
 
               <Link
                 className={classes.link}

@@ -1,10 +1,20 @@
-.section {
-  padding: 50px 70px;
-  align-items: center;
-  width: 100%;
-  box-sizing: border-box;
-  justify-content: center;
-  z-index: 0;
+@media (max-width: 500px) {
+  .section {
+    padding: 0px 20px;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+@media (min-width: 500px) {
+  .section {
+    padding: 50px 70px;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+    z-index: 0;
+  }
 }
 .introTop {
   margin-top: -5px;

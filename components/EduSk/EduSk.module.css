@@ -102,13 +102,14 @@
     height: 50px;
     background-color: #96754e;
   }
-  .experience::after {
+
+  .experienceElement::before {
     content: "";
     position: absolute;
     width: 2px;
     height: 50px;
     left: 0%;
-    margin-top: 60px;
+    margin-top: 30px;
     height: 50px;
     background-color: #96754e;
   }
@@ -250,13 +251,13 @@
     height: 50px;
     background-color: #96754e;
   }
-  .experience::after {
+  .experienceElement::before {
     content: "";
     position: absolute;
     width: 2px;
     height: 50px;
     left: 0%;
-    margin-top: 60px;
+    margin-top: 30px;
     height: 50px;
     background-color: #96754e;
   }

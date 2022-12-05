@@ -126,7 +126,7 @@ export default function Home() {
         <section id="edusk">
           <EduSk />
         </section>
-        <section>
+        <section id="portfolio">
           <Portfolio windowSize={size} />
         </section>
         <section id="contact">
