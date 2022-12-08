@@ -4,3 +4,10 @@
   right: 5%;
   z-index: 1;
 }
+.chatbotContainerClosed {
+  position: fixed;
+  bottom: 1%;
+  right: 5%;
+  z-index: 1;
+  visibility: hidden;
+}

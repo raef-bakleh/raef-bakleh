@@ -78,7 +78,7 @@ export default function Home() {
   });
   return (
     <div className={classes.wrapper}>
-      <ChatbotComponent />
+      <ChatbotComponent zindex={nav} />
 
       {!footerUpDown && (
         <footer className={classes.footer}>

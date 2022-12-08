@@ -4,12 +4,17 @@ import MessageParser from "./MassageParser";
 import ActionProvider from "./ActionProvider";
 import config from "./config";
 import classes from "./Chatbot.module.css";
-import "react-chatbot-kit/build/main.css";
 
-function ChatbotComponent() {
+function ChatbotComponent(props) {
+  console.log(props.zindex);
   return (
-    <header className={classes.chatbotContainer}>
-      <div className=""></div>
+    <div
+      className={
+        !props.zindex
+          ? classes.chatbotContainer
+          : classes.chatbotContainerClosed
+      }
+    >
       <Chatbot
         disableScrollToBottom={true}
         headerText={"hi there"}
@@ -18,7 +23,7 @@ function ChatbotComponent() {
         messageParser={MessageParser}
         placeholderText={"Ask me something here"}
       />
-    </header>
+    </div>
   );
 }
 

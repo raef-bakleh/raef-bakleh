@@ -1,18 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian&display=swap");
-
-html,
-body {
-  color: white;
-  background: #1d1b19;
-  letter-spacing: 1px;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  scroll-behavior: smooth;
-  font-family: "Noto Sans Georgian", sans-serif;
-}
 .react-chatbot-kit-user-chat-message-container {
   display: flex;
   margin: 15px 0;
@@ -90,10 +75,10 @@ body {
 
 .react-chatbot-kit-chat-bot-message {
   background-color: #2898ec;
-  padding: 10px;
+  padding: 100px;
   border-radius: 5px;
   font-size: 0.9rem;
-  color: #1d1d1d;
+  color: rgb(208, 11, 11);
   font-weight: medium;
   position: relative;
   width: 184.5px;
@@ -152,7 +137,6 @@ body {
 .react-chatbot-kit-chat-container {
   position: relative;
   width: 275px;
-  z-index: 1;
 }
 
 .react-chatbot-kit-chat-inner-container {
