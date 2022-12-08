@@ -12,6 +12,7 @@ import dynamic from "next/dynamic";
 import { BsArrowUp } from "react-icons/bs";
 import Link from "next/link";
 import Portfolio from "../components/Portfolio/Portfolio";
+import ChatbotComponent from "../components/Chatbot/Chatbot";
 
 export default function Home() {
   function useWindowSize() {
@@ -77,6 +78,8 @@ export default function Home() {
   });
   return (
     <div className={classes.wrapper}>
+      <ChatbotComponent />
+
       {!footerUpDown && (
         <footer className={classes.footer}>
           <div className={classes.arrow}>

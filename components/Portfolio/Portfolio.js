@@ -23,7 +23,6 @@ function Portfolio(windowSize) {
   const height = windowSize.windowSize.height;
   SwiperCore.use([Autoplay]);
 
-  // const swiper = useSwiper();
   const [swiper, setSwiper] = useState(null);
 
   return (
@@ -126,14 +125,12 @@ function Portfolio(windowSize) {
             <div className={classes.swiperProject}>
               <Image src={inCon} className={classes.projectGif}></Image>
               <p className={classes.projektName}>Car Sharing Website</p>
-              <div className={classes.projektOverlayGif}>
-                {/* <Link className={classes.link} href="#">
-                  <p className={classes.projektOverlayP}>Demo</p>
-                </Link>
-                <Link className={classes.link} href="#">
-                  <p className={classes.projektOverlayP}>github</p>
-                </Link> */}
-              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className={classes.swiperSlide}>
+            <div className={classes.swiperProject}>
+              <Image src={inCon} className={classes.projectGif}></Image>
+              <p className={classes.projektName}>Live Chat App</p>
             </div>
           </SwiperSlide>
           {/*  <SwiperSlide className={classes.swiperSlide}>

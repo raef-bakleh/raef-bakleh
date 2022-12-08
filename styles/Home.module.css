@@ -398,6 +398,7 @@
     right: 0;
     bottom: 0;
     transition: all 1s ease;
+    z-index: 0;
   }
   .rightScoll {
     top: 0;
@@ -410,6 +411,7 @@
     border-left: solid white;
     border-left: 2px solid rgba(255, 255, 255, 0.2);
     transition: all 1s ease;
+    z-index: 0;
   }
   .rightContainer .image {
     width: auto;

@@ -79,15 +79,14 @@ function EduSk() {
           {experience && (
             <div className={classes.experience}>
               <div className={classes.experienceElement}>
-                <h3>Avi Medical (02.2022- 12.2022)</h3>
-                <h1 className={classes.titel}> IT Working Student</h1>
-              </div>
-              <div className={classes.experienceElement}>
-                <h3>Sulzer GmbH (02.2023- today)</h3>
+                <h3>Sulzer GmbH (01.2023 - today)</h3>
                 <h1 className={classes.titel}>
-                  {" "}
                   Working Student APEX Developer
                 </h1>
+              </div>
+              <div className={classes.experienceElement}>
+                <h3>Avi Medical (02.2022 - 12.2022)</h3>
+                <h1 className={classes.titel}> IT Working Student</h1>
               </div>
             </div>
           )}
