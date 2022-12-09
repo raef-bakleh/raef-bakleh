@@ -13,6 +13,7 @@ import { BsArrowUp } from "react-icons/bs";
 import Link from "next/link";
 import Portfolio from "../components/Portfolio/Portfolio";
 import ChatbotComponent from "../components/Chatbot/Chatbot";
+import { SiChatbot } from "react-icons/si";
 
 export default function Home() {
   function useWindowSize() {
@@ -76,10 +77,21 @@ export default function Home() {
     };
     window.addEventListener("scroll", changeValue);
   });
+  const [chatbot, setChatbot] = useState(false);
+  const chatbotOpenClose = () => {
+    setChatbot(!chatbot);
+  };
   return (
     <div className={classes.wrapper}>
-      <ChatbotComponent zindex={nav} />
-
+      <div>
+        <SiChatbot
+          onClick={chatbotOpenClose}
+          className={classes.chatbotIcon}
+          size={45}
+          fill={"orange"}
+        />
+        {chatbot && <ChatbotComponent zindex={nav} />}
+      </div>
       {!footerUpDown && (
         <footer className={classes.footer}>
           <div className={classes.arrow}>
