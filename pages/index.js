@@ -83,15 +83,17 @@ export default function Home() {
   };
   return (
     <div className={classes.wrapper}>
-      <div>
-        <SiChatbot
-          onClick={chatbotOpenClose}
-          className={classes.chatbotIcon}
-          size={45}
-          fill={"orange"}
-        />
-        {chatbot && <ChatbotComponent zindex={nav} />}
-      </div>
+      {!nav && (
+        <div className={classes.chatbotContainer}>
+          <SiChatbot
+            onClick={chatbotOpenClose}
+            className={classes.chatbotIcon}
+            size={45}
+            fill={"orange"}
+          />
+          {chatbot && <ChatbotComponent zindex={nav} />}
+        </div>
+      )}
       {!footerUpDown && (
         <footer className={classes.footer}>
           <div className={classes.arrow}>

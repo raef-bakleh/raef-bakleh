@@ -19,9 +19,11 @@ function ChatbotComponent(props) {
         disableScrollToBottom={true}
         headerText={"hi there"}
         config={config}
+        saveMessages={true}
         actionProvider={ActionProvider}
         messageParser={MessageParser}
         placeholderText={"Ask me something here"}
+        
       />
     </div>
   );

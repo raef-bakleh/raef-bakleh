@@ -575,6 +575,7 @@
     color: #96754e;
   }
   .chatbotIcon {
+    cursor: pointer;
     z-index: 0;
     position: fixed;
     bottom: 1%;
@@ -583,6 +584,9 @@
     padding: 15px;
     border: 1px solid white;
     border-radius: 25px;
+  }
+  .chatbotContainer {
+    z-index: -2;
   }
 }
 @keyframes MoveUpDown {
