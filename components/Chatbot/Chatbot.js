@@ -23,7 +23,6 @@ function ChatbotComponent(props) {
         actionProvider={ActionProvider}
         messageParser={MessageParser}
         placeholderText={"Ask me something here"}
-        
       />
     </div>
   );

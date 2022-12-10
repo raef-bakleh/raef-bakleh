@@ -1,0 +1,12 @@
+.widgetButton {
+  margin-left: 8%;
+  padding: 4%;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+.widgetButton:hover {
+  margin-left: 8%;
+  padding: 4%;
+  border: 1px solid #96754e;
+  border-radius: 15px;
+}

@@ -1,13 +1,47 @@
-.chatbotContainer {
-  position: fixed;
-  bottom: 11%;
-  right: 7%;
-  z-index: 1;
+@media (min-width: 1040px) {
+  .chatbotContainer {
+    position: fixed;
+    bottom: 13%;
+    right: 6%;
+    z-index: 1;
+  }
+  .chatbotContainerClosed {
+    position: fixed;
+    bottom: 1%;
+    right: 5%;
+    z-index: 1;
+    visibility: hidden;
+  }
 }
-.chatbotContainerClosed {
-  position: fixed;
-  bottom: 1%;
-  right: 5%;
-  z-index: 1;
-  visibility: hidden;
+
+@media (max-width: 1040px) {
+  .chatbotContainer {
+    position: fixed;
+    bottom: 43%;
+    left: 6%;
+    z-index: 1;
+    visibility: hidden;
+  }
+  .chatbotContainerClosed {
+    position: fixed;
+    bottom: 1%;
+    left: 5%;
+    z-index: 1;
+    visibility: hidden;
+  }
+}
+@media (max-width: 500px) {
+  .chatbotContainer {
+    position: fixed;
+    bottom: 23%;
+    left: 20%;
+    z-index: 1;
+  }
+  .chatbotContainerClosed {
+    position: fixed;
+    bottom: 1%;
+    left: 5%;
+    z-index: 1;
+    visibility: hidden;
+  }
 }

@@ -18,6 +18,9 @@ class MessageParser {
       )
     ) {
       this.actionProvider.good();
+    }
+    else if(message.includes("raef")){
+      this.actionProvider.raef()
     } else {
       this.actionProvider.dontUnderstand();
     }
