@@ -129,7 +129,6 @@ export default function Home() {
                 onClick={chatbotOpenClose}
                 className={classes.chatbotIcon}
                 size={45}
-                fill={"orange"}
               />
               {chatbot && <ChatbotComponent zindex={nav} />}
             </div>
@@ -308,7 +307,6 @@ export default function Home() {
                 onClick={chatbotOpenClose}
                 className={classes.chatbotIcon}
                 size={45}
-                fill={"orange"}
               />
               {chatbot && <ChatbotComponent zindex={nav} />}
             </div>
@@ -388,7 +386,7 @@ export default function Home() {
                     src={profileImage}
                     className={classes.image}
                   />
-                  <p>HI THERE , I AM</p>
+                  <p>HALLO 👋, ICH BIN</p>
                   <div className={classes.changedTitle}>
                     <Typewriter
                       options={{

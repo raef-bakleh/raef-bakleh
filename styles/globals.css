@@ -166,7 +166,7 @@ body {
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
     background-color: #efefef;
-    font-family: Arial;
+    font-family: "Noto Sans Georgian", sans-serif;
     display: flex;
     align-items: center;
     font-size: 0.85rem;
@@ -266,7 +266,7 @@ body {
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
     background-color: #efefef;
-    font-family: Arial;
+    font-family: "Noto Sans Georgian", sans-serif;
     display: flex;
     align-items: center;
     font-size: 0.85rem;
