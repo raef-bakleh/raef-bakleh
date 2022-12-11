@@ -58,10 +58,15 @@ export default function Home() {
   const hideShowNav = () => {
     setNav(!nav);
   };
-  const names = [
+  const namesEnglisch = [
     "Raef Bakleh",
     "Informatics Student",
     "Learning Web Development",
+  ];
+  const namesDeutsch = [
+    "Raef Bakleh",
+    "Informatik Student",
+    "lerne Webentwicklung",
   ];
 
   const [state, setState] = useState(false);
@@ -217,13 +222,13 @@ export default function Home() {
                       }}
                       onInit={(typewriter) => {
                         typewriter
-                          .typeString(names[0])
+                          .typeString(namesEnglisch[0])
                           .pauseFor(3000)
                           .deleteAll()
-                          .typeString(names[1])
+                          .typeString(namesEnglisch[1])
                           .pauseFor(3000)
                           .deleteAll()
-                          .typeString(names[2])
+                          .typeString(namesEnglisch[2])
                           .pauseFor(3000)
                           .start();
                       }}
@@ -395,13 +400,13 @@ export default function Home() {
                       }}
                       onInit={(typewriter) => {
                         typewriter
-                          .typeString(names[0])
+                          .typeString(namesDeutsch[0])
                           .pauseFor(3000)
                           .deleteAll()
-                          .typeString(names[1])
+                          .typeString(namesDeutsch[1])
                           .pauseFor(3000)
                           .deleteAll()
-                          .typeString(names[2])
+                          .typeString(namesDeutsch[2])
                           .pauseFor(3000)
                           .start();
                       }}
