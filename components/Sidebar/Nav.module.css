@@ -95,6 +95,7 @@
     font-size: 30px;
     color: aliceblue;
     width: 100px;
+    width: fit-content;
   }
   .listElement:hover {
     color: #96754e;
@@ -250,6 +251,7 @@
     font-size: 30px;
     color: aliceblue;
     width: 100px;
+    width: fit-content;
   }
 
   .listElement:hover {

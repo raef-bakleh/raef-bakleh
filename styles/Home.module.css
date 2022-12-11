@@ -1,4 +1,11 @@
 @media (max-width: 500px) {
+  .toggleLanguage {
+    cursor: pointer;
+    z-index: 1000;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+  }
   .hamburger {
     position: fixed;
     right: 0;
@@ -189,6 +196,13 @@
   }
 }
 @media (max-width: 1040px) and (min-width: 500px) {
+  .toggleLanguage {
+    cursor: pointer;
+    z-index: 1000;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+  }
   .hamburger {
     position: fixed;
     right: 0;
@@ -370,6 +384,13 @@
   }
 }
 @media (min-width: 1040px) {
+  .toggleLanguage {
+    cursor: pointer;
+    z-index: 1000;
+    position: absolute;
+    margin-top: 2%;
+    left: 5%;
+  }
   .hamburger {
     position: fixed;
     right: 0;

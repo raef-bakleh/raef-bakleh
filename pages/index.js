@@ -81,142 +81,368 @@ export default function Home() {
   const chatbotOpenClose = () => {
     setChatbot(!chatbot);
   };
+  const [language, setLanguage] = useState(true);
+  const toggleLanguage = () => {
+    setLanguage(!language);
+  };
   return (
-    <div className={classes.wrapper}>
-      {!nav && (
-        <div className={classes.chatbotContainer}>
-          <SiChatbot
-            onClick={chatbotOpenClose}
-            className={classes.chatbotIcon}
-            size={45}
-            fill={"orange"}
-          />
-          {chatbot && <ChatbotComponent zindex={nav} />}
-        </div>
-      )}
-      {!footerUpDown && (
-        <footer className={classes.footer}>
-          <div className={classes.arrow}>
-            <Link href="/#image" scroll={false}>
-              <BsArrowUp className={classes.arrowUp} size={55} />
-            </Link>
+    <div>
+      {language && (
+        <div className={classes.wrapper}>
+          <div className={classes.toggleLanguage} onClick={toggleLanguage}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="25"
+              viewBox="0 0 5 3"
+            >
+              <desc>Flag of Germany</desc>
+              <rect
+                id="black_stripe"
+                width="5"
+                height="3"
+                y="0"
+                x="0"
+                fill="#000"
+              />
+              <rect
+                id="red_stripe"
+                width="5"
+                height="2"
+                y="1"
+                x="0"
+                fill="#D00"
+              />
+              <rect
+                id="gold_stripe"
+                width="5"
+                height="1"
+                y="2"
+                x="0"
+                fill="#FFCE00"
+              />
+            </svg>
           </div>
-          <div className={classes.footerText}>
-            <div>Copyright © 2022. All rights reserved.</div>
-            <br />
-            <div>
-              Developed by &nbsp;
-              <Link
-                className={classes.link}
-                href={"https://github.com/raef-bakleh"}
-                target="_blank"
-              >
-                Raef Bakleh
-              </Link>
+          {!nav && (
+            <div className={classes.chatbotContainer}>
+              <SiChatbot
+                onClick={chatbotOpenClose}
+                className={classes.chatbotIcon}
+                size={45}
+                fill={"orange"}
+              />
+              {chatbot && <ChatbotComponent zindex={nav} />}
             </div>
-          </div>
-        </footer>
-      )}
-      <AnimatedCursor
-        color="75, 73, 73"
-        innerSize={4}
-        outerSize={25}
-        innerScale={4}
-        outerScale={0}
-        outerAlpha={0}
-        trailingSpeed={5}
-        outerStyle={{
-          border: "2px solid rgb(75, 73, 73)",
-          zIndex: "10001",
-        }}
-        innerStyle={{
-          zIndex: "1001",
-          border: "2px solid rgb(205, 73, 73)",
-        }}
-        clickables={["none"]}
-      />
-
-      <div className={state ? classes.leftScroll : classes.leftContainer}>
-        <section id="about">
-          <AboutMe />
-        </section>
-        <section id="edusk">
-          <EduSk />
-        </section>
-        <section id="portfolio">
-          <Portfolio windowSize={size} />
-        </section>
-        <section id="contact">
-          <Contact />
-        </section>
-      </div>
-      <div className={state ? classes.rightScoll : classes.rightContainer}>
-        <div className={!nav ? classes.hamburger : classes.hamburgerClose}>
-          <Hamburger
-            className={classes.reactHamburger}
-            toggled={nav}
-            toggle={hideShowNav}
+          )}
+          {!footerUpDown && (
+            <footer className={classes.footer}>
+              <div className={classes.arrow}>
+                <Link href="/#image" scroll={false}>
+                  <BsArrowUp className={classes.arrowUp} size={55} />
+                </Link>
+              </div>
+              <div className={classes.footerText}>
+                <div>Copyright © 2022. All rights reserved.</div>
+                <br />
+                <div>
+                  Developed by &nbsp;
+                  <Link
+                    className={classes.link}
+                    href={"https://github.com/raef-bakleh"}
+                    target="_blank"
+                  >
+                    Raef Bakleh
+                  </Link>
+                </div>
+              </div>
+            </footer>
+          )}
+          <AnimatedCursor
+            color="75, 73, 73"
+            innerSize={4}
+            outerSize={25}
+            innerScale={4}
+            outerScale={0}
+            outerAlpha={0}
+            trailingSpeed={5}
+            outerStyle={{
+              border: "2px solid rgb(75, 73, 73)",
+              zIndex: "10001",
+            }}
+            innerStyle={{
+              zIndex: "1001",
+              border: "2px solid rgb(205, 73, 73)",
+            }}
+            clickables={["none"]}
           />
-        </div>
-        {<Nav setNav={setNav} nav={nav} />}
+          <div className={state ? classes.leftScroll : classes.leftContainer}>
+            <section id="about">
+              <AboutMe language={language} />
+            </section>
+            <section id="edusk">
+              <EduSk language={language} />
+            </section>
+            <section id="portfolio">
+              <Portfolio language={language} windowSize={size} />
+            </section>
+            <section id="contact">
+              <Contact language={language} />
+            </section>
+          </div>
+          <div className={state ? classes.rightScoll : classes.rightContainer}>
+            <div className={!nav ? classes.hamburger : classes.hamburgerClose}>
+              <Hamburger
+                className={classes.reactHamburger}
+                toggled={nav}
+                toggle={hideShowNav}
+              />
+            </div>
+            {<Nav setNav={setNav} nav={nav} language={language} />}
 
-        <div className={classes.imgWrapper}>
-          <div className={state ? classes.longBoxScroll : classes.longBox}>
-            <div className={state ? classes.wideBoxScroll : classes.wideBox}>
-              <Image id="image" src={profileImage} className={classes.image} />
-              <p>HI THERE , I AM</p>
-              <div className={classes.changedTitle}>
-                <Typewriter
-                  options={{
-                    autoStart: true,
-                    loop: true,
-                  }}
-                  onInit={(typewriter) => {
-                    typewriter
-                      .typeString(names[0])
-                      .pauseFor(3000)
-                      .deleteAll()
-                      .typeString(names[1])
-                      .pauseFor(3000)
-                      .deleteAll()
-                      .typeString(names[2])
-                      .pauseFor(3000)
-                      .start();
-                  }}
-                />
+            <div className={classes.imgWrapper}>
+              <div className={state ? classes.longBoxScroll : classes.longBox}>
+                <div
+                  className={state ? classes.wideBoxScroll : classes.wideBox}
+                >
+                  <Image
+                    id="image"
+                    src={profileImage}
+                    className={classes.image}
+                  />
+                  <p>HI THERE , I AM</p>
+                  <div className={classes.changedTitle}>
+                    <Typewriter
+                      options={{
+                        autoStart: true,
+                        loop: true,
+                      }}
+                      onInit={(typewriter) => {
+                        typewriter
+                          .typeString(names[0])
+                          .pauseFor(3000)
+                          .deleteAll()
+                          .typeString(names[1])
+                          .pauseFor(3000)
+                          .deleteAll()
+                          .typeString(names[2])
+                          .pauseFor(3000)
+                          .start();
+                      }}
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+          {footerUpDown && (
+            <footer className={classes.footer}>
+              <div className={classes.arrow}>
+                <Link href="/#about" scroll={false}>
+                  <BsArrowUp
+                    onClick={() => {
+                      setNav(false);
+                    }}
+                    className={classes.arrowUp}
+                    size={55}
+                  />
+                </Link>
+              </div>
+              <div className={classes.footerText}>
+                <div>Copyright © 2022. All rights reserved.</div>
+                <br />
+                <div>
+                  Developed by &nbsp;
+                  <Link
+                    className={classes.link}
+                    href={"https://github.com/raef-bakleh"}
+                    target="_blank"
+                  >
+                    Raef Bakleh
+                  </Link>
+                </div>
+              </div>
+            </footer>
+          )}
         </div>
-      </div>
-      {footerUpDown && (
-        <footer className={classes.footer}>
-          <div className={classes.arrow}>
-            <Link href="/#about" scroll={false}>
-              <BsArrowUp
-                onClick={() => {
-                  setNav(false);
-                }}
-                className={classes.arrowUp}
-                size={55}
-              />
-            </Link>
+      )}
+      {!language && (
+        <div className={classes.wrapper}>
+          <div className={classes.toggleLanguage} onClick={toggleLanguage}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 60 30"
+              width="50"
+              height="25"
+            >
+              <clipPath id="s">
+                <path d="M0,0 v30 h60 v-30 z" />
+              </clipPath>
+              <clipPath id="t">
+                <path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z" />
+              </clipPath>
+              <g clip-path="url(#s)">
+                <path d="M0,0 v30 h60 v-30 z" fill="#012169" />
+                <path
+                  d="M0,0 L60,30 M60,0 L0,30"
+                  stroke="#fff"
+                  stroke-width="6"
+                />
+                <path
+                  d="M0,0 L60,30 M60,0 L0,30"
+                  clip-path="url(#t)"
+                  stroke="#C8102E"
+                  stroke-width="4"
+                />
+                <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10" />
+                <path
+                  d="M30,0 v30 M0,15 h60"
+                  stroke="#C8102E"
+                  stroke-width="6"
+                />
+              </g>
+            </svg>
           </div>
-          <div className={classes.footerText}>
-            <div>Copyright © 2022. All rights reserved.</div>
-            <br />
-            <div>
-              Developed by &nbsp;
-              <Link
-                className={classes.link}
-                href={"https://github.com/raef-bakleh"}
-                target="_blank"
-              >
-                Raef Bakleh
-              </Link>
+          {!nav && (
+            <div className={classes.chatbotContainer}>
+              <SiChatbot
+                onClick={chatbotOpenClose}
+                className={classes.chatbotIcon}
+                size={45}
+                fill={"orange"}
+              />
+              {chatbot && <ChatbotComponent zindex={nav} />}
+            </div>
+          )}
+          {!footerUpDown && (
+            <footer className={classes.footer}>
+              <div className={classes.arrow}>
+                <Link href="/#image" scroll={false}>
+                  <BsArrowUp className={classes.arrowUp} size={55} />
+                </Link>
+              </div>
+              <div className={classes.footerText}>
+                <div>Copyright © 2022. All rights reserved.</div>
+                <br />
+                <div>
+                  Developed by &nbsp;
+                  <Link
+                    className={classes.link}
+                    href={"https://github.com/raef-bakleh"}
+                    target="_blank"
+                  >
+                    Raef Bakleh
+                  </Link>
+                </div>
+              </div>
+            </footer>
+          )}
+          <AnimatedCursor
+            color="75, 73, 73"
+            innerSize={4}
+            outerSize={25}
+            innerScale={4}
+            outerScale={0}
+            outerAlpha={0}
+            trailingSpeed={5}
+            outerStyle={{
+              border: "2px solid rgb(75, 73, 73)",
+              zIndex: "10001",
+            }}
+            innerStyle={{
+              zIndex: "1001",
+              border: "2px solid rgb(205, 73, 73)",
+            }}
+            clickables={["none"]}
+          />
+          <div className={state ? classes.leftScroll : classes.leftContainer}>
+            <section id="about">
+              <AboutMe language={language} />
+            </section>
+            <section id="edusk">
+              <EduSk language={language} />
+            </section>
+            <section id="portfolio">
+              <Portfolio language={language} windowSize={size} />
+            </section>
+            <section id="contact">
+              <Contact language={language} />
+            </section>
+          </div>
+          <div className={state ? classes.rightScoll : classes.rightContainer}>
+            <div className={!nav ? classes.hamburger : classes.hamburgerClose}>
+              <Hamburger
+                className={classes.reactHamburger}
+                toggled={nav}
+                toggle={hideShowNav}
+              />
+            </div>
+            {<Nav setNav={setNav} nav={nav} language={language} />}
+
+            <div className={classes.imgWrapper}>
+              <div className={state ? classes.longBoxScroll : classes.longBox}>
+                <div
+                  className={state ? classes.wideBoxScroll : classes.wideBox}
+                >
+                  <Image
+                    id="image"
+                    src={profileImage}
+                    className={classes.image}
+                  />
+                  <p>HI THERE , I AM</p>
+                  <div className={classes.changedTitle}>
+                    <Typewriter
+                      options={{
+                        autoStart: true,
+                        loop: true,
+                      }}
+                      onInit={(typewriter) => {
+                        typewriter
+                          .typeString(names[0])
+                          .pauseFor(3000)
+                          .deleteAll()
+                          .typeString(names[1])
+                          .pauseFor(3000)
+                          .deleteAll()
+                          .typeString(names[2])
+                          .pauseFor(3000)
+                          .start();
+                      }}
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </footer>
+          {footerUpDown && (
+            <footer className={classes.footer}>
+              <div className={classes.arrow}>
+                <Link href="/#about" scroll={false}>
+                  <BsArrowUp
+                    onClick={() => {
+                      setNav(false);
+                    }}
+                    className={classes.arrowUp}
+                    size={55}
+                  />
+                </Link>
+              </div>
+              <div className={classes.footerText}>
+                <div>Copyright © 2022. All rights reserved.</div>
+                <br />
+                <div>
+                  Developed by &nbsp;
+                  <Link
+                    className={classes.link}
+                    href={"https://github.com/raef-bakleh"}
+                    target="_blank"
+                  >
+                    Raef Bakleh
+                  </Link>
+                </div>
+              </div>
+            </footer>
+          )}
+        </div>
       )}
     </div>
   );
