@@ -275,7 +275,7 @@ export default function Home() {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 60 30"
-              width="50"
+              width="45"
               height="25"
             >
               <clipPath id="s">

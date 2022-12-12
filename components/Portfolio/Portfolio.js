@@ -3,6 +3,7 @@ import classes from "../Portfolio/Portfolio.module.css";
 import "../Portfolio/Portfolio.module.css";
 import Projekt1 from "../../pages/img/project1.png";
 import Projekt2 from "../../pages/img/project2.png";
+import Projekt3 from "../../pages/img/haskel.png";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -56,14 +57,15 @@ function Portfolio(props) {
           <div className={classes.swiper}>
             <Swiper
               tabIndex={0}
-              spaceBetween={30}
+              spaceBetween={20}
               className={classes.swiperContainer}
               slidesPerView={width > 800 ? 3 : 1}
               loop={true}
               autoplay={{
-                delay: 5000,
-                disableOnInteraction: true,
+                delay: 200,
+                pauseOnMouseEnter: "true",
               }}
+              draggable={true}
               onSwiper={(s) => {
                 setSwiper(s);
               }}
@@ -122,6 +124,26 @@ function Portfolio(props) {
                   </div>
                 </div>
               </SwiperSlide>
+              <SwiperSlide className={classes.swiperSlide}>
+                <div className={classes.swiperProject}>
+                  <Image
+                    src={Projekt3}
+                    className={classes.projectPhoto}
+                  ></Image>
+                  <p className={classes.projektName}>
+                    Functional Langauge implementation
+                  </p>
+                  <div className={classes.projektOverlayImage}>
+                    <Link
+                      className={classes.link}
+                      href="https://github.com/raef-bakleh/Academic-Project/tree/main/sep-impl-team-7-main"
+                      target={"_blank"}
+                    >
+                      <p className={classes.projektOverlayP}>github</p>
+                    </Link>
+                  </div>
+                </div>
+              </SwiperSlide>
 
               <SwiperSlide className={classes.swiperSlide}>
                 <div className={classes.swiperProject}>
@@ -129,12 +151,12 @@ function Portfolio(props) {
                   <p className={classes.projektName}>Car Sharing Website</p>
                 </div>
               </SwiperSlide>
-              <SwiperSlide className={classes.swiperSlide}>
+              {/* <SwiperSlide className={classes.swiperSlide}>
                 <div className={classes.swiperProject}>
                   <Image src={inCon} className={classes.projectGif}></Image>
                   <p className={classes.projektName}>Live Chat App</p>
                 </div>
-              </SwiperSlide>
+              </SwiperSlide> */}
               {/*  <SwiperSlide className={classes.swiperSlide}>
             <div className={classes.swiperProject}>
               <Image src={Projekt1} className={classes.projectPhoto}></Image>
