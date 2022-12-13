@@ -3,6 +3,7 @@ import classes from "./AboutMe.module.css";
 import { GoDesktopDownload } from "react-icons/go";
 import { useRouter } from "next/router";
 import { useState } from "react";
+import { Fade } from "react-awesome-reveal";
 
 function AboutMe(props) {
   const [isHoverEmail, setIsHoverEmail] = useState(false);
