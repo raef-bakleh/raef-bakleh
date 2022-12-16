@@ -138,7 +138,7 @@ export default function Home() {
               {chatbot && <ChatbotComponent zindex={nav} />}
             </div>
           )}
-          {!footerUpDown && (
+          {footerUpDown && (
             <footer className={classes.footer}>
               <div className={classes.arrow}>
                 <Link href="/#image" scroll={false}>
@@ -238,7 +238,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          {footerUpDown && (
+          {/* {footerUpDown && (
             <footer className={classes.footer}>
               <div className={classes.arrow}>
                 <Link href="/#about" scroll={false}>
@@ -266,7 +266,7 @@ export default function Home() {
                 </div>
               </div>
             </footer>
-          )}
+          )} */}
         </div>
       )}
       {!language && (
@@ -416,7 +416,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          {footerUpDown && (
+          {/* {footerUpDown && (
             <footer className={classes.footer}>
               <div className={classes.arrow}>
                 <Link href="/#about" scroll={false}>
@@ -444,7 +444,7 @@ export default function Home() {
                 </div>
               </div>
             </footer>
-          )}
+          )} */}
         </div>
       )}
     </div>
