@@ -11,6 +11,19 @@ function Contact(props) {
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
   const [submitMessage, setSubmitMessage] = useState(false);
+  const date = new Date();
+  const messageDate =
+    date.getFullYear() +
+    "-" +
+    (date.getMonth() + 1) +
+    "-" +
+    date.getDate() +
+    " um " +
+    date.getHours() +
+    ":" +
+    date.getMinutes() +
+    ":" +
+    date.getSeconds();
 
   const nameHanlder = (name) => {
     setName(name.target.value);
@@ -30,6 +43,7 @@ function Contact(props) {
       email: email,
       phone: phone,
       message: message,
+      date: messageDate,
     };
     event.preventDefault();
     fetch(
