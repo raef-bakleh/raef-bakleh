@@ -4,6 +4,7 @@ import "../Portfolio/Portfolio.module.css";
 import Projekt1 from "../../pages/img/project1.png";
 import Projekt2 from "../../pages/img/project2.png";
 import Projekt3 from "../../pages/img/haskel.png";
+import Projekt4 from "../../pages/img/contacts-manager.png";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -56,7 +57,6 @@ function Portfolio(props) {
 
           <div className={classes.swiper}>
             <Swiper
-              tabIndex={0}
               spaceBetween={20}
               className={classes.swiperContainer}
               slidesPerView={width > 800 ? 3 : 1}
@@ -124,6 +124,7 @@ function Portfolio(props) {
                   </div>
                 </div>
               </SwiperSlide>
+
               <SwiperSlide className={classes.swiperSlide}>
                 <div className={classes.swiperProject}>
                   <Image
@@ -149,6 +150,31 @@ function Portfolio(props) {
                 <div className={classes.swiperProject}>
                   <Image src={inCon} className={classes.projectGif}></Image>
                   <p className={classes.projektName}>Car Sharing Website</p>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className={classes.swiperSlide}>
+                <div className={classes.swiperProject}>
+                  <Image
+                    src={Projekt4}
+                    className={classes.projectPhoto}
+                  ></Image>
+                  <p className={classes.projektName}>Contacts Manager</p>
+                  <div className={classes.projektOverlayImage}>
+                    <Link
+                      className={classes.link}
+                      href="https://contacts-manager-six.vercel.app"
+                      target={"_blank"}
+                    >
+                      <p className={classes.projektOverlayP}>Demo</p>
+                    </Link>
+                    <Link
+                      className={classes.link}
+                      href="https://github.com/raef-bakleh/contacts-manager"
+                      target={"_blank"}
+                    >
+                      <p className={classes.projektOverlayP}>github</p>
+                    </Link>
+                  </div>
                 </div>
               </SwiperSlide>
               {/* <SwiperSlide className={classes.swiperSlide}>
@@ -248,7 +274,7 @@ function Portfolio(props) {
                 <div className={classes.swiperProject}>
                   <Image
                     height={250}
-                    src={Projekt2}
+                    src={Projekt4}
                     className={classes.projectPhoto}
                   ></Image>
                   <p className={classes.projektName}>Expanses Manager</p>
