@@ -53,11 +53,12 @@
 
 .swiper {
   z-index: 0;
+  max-height: 350px;
 }
 .swiperContainer {
   background-color: #1d1b19;
   width: 100%;
-  height: 100%;
+  height: auto;
   margin-top: 40px;
   z-index: 0;
 }
@@ -65,15 +66,15 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
   cursor: pointer;
   justify-content: center;
   align-items: center;
   z-index: 0;
+  max-height: 250px;
 }
 .projectPhoto {
+  size: 10ch;
   width: 100%;
-  height: 100%;
   border-radius: 15px;
   z-index: 0;
 }
@@ -152,9 +153,7 @@
 }
 .projectGif {
   width: 100%;
-  height: 100%;
   border-radius: 27px;
-  image-resolution: 20dpi;
 }
 .projektOverlayGif {
   position: fixed;

@@ -5,6 +5,7 @@ import Projekt1 from "../../pages/img/project1.png";
 import Projekt2 from "../../pages/img/project2.png";
 import Projekt3 from "../../pages/img/haskel.png";
 import Projekt4 from "../../pages/img/contacts-manager.png";
+import Projekt5 from "../../pages/img/ecommerce.png";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -73,10 +74,8 @@ function Portfolio(props) {
               <SwiperSlide className={classes.swiperSlide}>
                 <div className={classes.swiperProject}>
                   <Image
-                    height={250}
                     src={Projekt1}
                     className={classes.projectPhoto}
-                    sizes={"50vw"}
                   ></Image>
                   <p className={classes.projektName}>Food Ordering Website</p>
                   <div className={classes.projektOverlayImage}>
@@ -101,7 +100,6 @@ function Portfolio(props) {
               <SwiperSlide className={classes.swiperSlide}>
                 <div className={classes.swiperProject}>
                   <Image
-                    height={250}
                     src={Projekt2}
                     className={classes.projectPhoto}
                   ></Image>
@@ -138,6 +136,31 @@ function Portfolio(props) {
                     <Link
                       className={classes.link}
                       href="https://github.com/raef-bakleh/Academic-Project/tree/main/sep-impl-team-7-main"
+                      target={"_blank"}
+                    >
+                      <p className={classes.projektOverlayP}>github</p>
+                    </Link>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className={classes.swiperSlide}>
+                <div className={classes.swiperProject}>
+                  <Image
+                    src={Projekt5}
+                    className={classes.projectPhoto}
+                  ></Image>
+                  <p className={classes.projektName}>eCommerce Website</p>
+                  <div className={classes.projektOverlayImage}>
+                    <Link
+                      className={classes.link}
+                      href="https://e-commerce-website-lyart-zeta.vercel.app/"
+                      target={"_blank"}
+                    >
+                      <p className={classes.projektOverlayP}>Demo</p>
+                    </Link>
+                    <Link
+                      className={classes.link}
+                      href="https://github.com/raef-bakleh/eCommerce-Website"
                       target={"_blank"}
                     >
                       <p className={classes.projektOverlayP}>github</p>
@@ -245,10 +268,8 @@ function Portfolio(props) {
               <SwiperSlide className={classes.swiperSlide}>
                 <div className={classes.swiperProject}>
                   <Image
-                    height={250}
                     src={Projekt1}
                     className={classes.projectPhoto}
-                    sizes={"50vw"}
                   ></Image>
                   <p className={classes.projektName}>Food Ordering Website</p>
                   <div className={classes.projektOverlayImage}>
@@ -273,7 +294,6 @@ function Portfolio(props) {
               <SwiperSlide className={classes.swiperSlide}>
                 <div className={classes.swiperProject}>
                   <Image
-                    height={250}
                     src={Projekt4}
                     className={classes.projectPhoto}
                   ></Image>
