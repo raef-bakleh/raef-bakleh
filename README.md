@@ -27,6 +27,8 @@ I have experience and feel comfortable working with these:
 - ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
 - ![Haskell](https://img.shields.io/static/v1?style=for-the-badge&message=Haskell&color=5D4F85&logo=Haskell&logoColor=FFFFFF&label=)
 - ![SQL](https://img.shields.io/badge/SQL-SQL-blue)
+- [![APEX PL/SQL](https://cdn.rawgit.com/Dani3lSun/apex-github-badges/6ed914a1/badges/apex-plsql-badge.svg)](https://github.com/Dani3lSun/apex-github-badges)
+- [![APEX App](https://cdn.rawgit.com/Dani3lSun/apex-github-badges/b7e95341/badges/apex-app-badge.svg)](https://github.com/Dani3lSun/apex-github-badges)
 - ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 - ![LaTeX](https://img.shields.io/badge/latex-%23008080.svg?style=for-the-badge&logo=latex&logoColor=white)
 
