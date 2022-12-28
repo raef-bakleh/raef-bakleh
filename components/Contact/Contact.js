@@ -1,10 +1,7 @@
 import React, { useRef, useState } from "react";
 import classes from "./Contact.module.css";
+import toast from "react-hot-toast";
 function Contact(props) {
-  // const name = useRef('');
-  //  var contact = {
-  //   name
-  // };
   useRef(() => {});
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -12,6 +9,10 @@ function Contact(props) {
   const [message, setMessage] = useState("");
   const [submitMessage, setSubmitMessage] = useState(false);
   const date = new Date();
+  const successMeassage = () => {
+    toast.success("thank you will contact you as soon as posible");
+  };
+
   const messageDate =
     date.getFullYear() +
     "-" +
@@ -55,14 +56,14 @@ function Contact(props) {
         }),
       }
     );
-    setTimeout(() => {
-      setSubmitMessage(true);
-    }, 100);
 
-    setTimeout(() => {
-      setSubmitMessage(false);
-    }, 6000);
-
+    if (props.language) {
+      toast.success("Thank you, will contact as soon as possible");
+    } else {
+      toast.success(
+        "Danke für die Kontaktaufnahme, werde mich so schnell wie möglich zurückmelden"
+      );
+    }
     setName("");
     setEmail("");
     setPhone("");
@@ -76,12 +77,9 @@ function Contact(props) {
             <h3 className={classes.head}>CONTACT</h3>
             <h1 className={classes.introTop}>Get In Touch</h1>
             <div className={classes.line}></div>
-            {submitMessage && (
-              <div className={classes.formSubmitted}>
-                Thank you for contacting, will reach you out as soon as
-                possible!
-              </div>
-            )}
+            {/* {submitMessage && (
+              <div className={classes.formSubmitted}></div>
+            )} */}
             <form
               className={classes.form}
               onSubmit={sendContact}
@@ -164,11 +162,7 @@ function Contact(props) {
             <h3 className={classes.head}>KONTAKT</h3>
             <h1 className={classes.introTop}>Kontaktiere mich</h1>
             <div className={classes.line}></div>
-            {submitMessage && (
-              <div className={classes.formSubmitted}>
-                Danke, werde mich sobald wie möglich bei dir melden
-              </div>
-            )}
+            {/* {submitMessage && <div></div>} */}
             <form
               className={classes.form}
               onSubmit={sendContact}

@@ -21,13 +21,11 @@ import inCon from "../../pages/img/inconstruction.jpg";
 import SwiperCore, { Autoplay } from "swiper";
 
 function Portfolio(props) {
-  console.log(props.windowSize.height);
   const width = props.windowSize.width;
   const height = props.windowSize.height;
   SwiperCore.use([Autoplay]);
 
   const [swiper, setSwiper] = useState(null);
-  console.log(props.language);
   return (
     <div>
       {props.language && (

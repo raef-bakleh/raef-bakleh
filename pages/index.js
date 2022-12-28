@@ -14,6 +14,7 @@ import Link from "next/link";
 import Portfolio from "../components/Portfolio/Portfolio";
 import ChatbotComponent from "../components/Chatbot/Chatbot";
 import { SiChatbot } from "react-icons/si";
+import { Toaster } from "react-hot-toast";
 
 export default function Home() {
   function useWindowSize() {
@@ -94,6 +95,7 @@ export default function Home() {
     <div>
       {language && (
         <div className={classes.wrapper}>
+          <Toaster position="top-center" toastOptions={{ duration: 5000 }} />
           <div className={classes.toggleLanguage} onClick={toggleLanguage}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -271,6 +273,8 @@ export default function Home() {
       )}
       {!language && (
         <div className={classes.wrapper}>
+          <Toaster position="top-center" toastOptions={{ duration: 5000 }} />
+
           <div className={classes.toggleLanguage} onClick={toggleLanguage}>
             <svg
               xmlns="http://www.w3.org/2000/svg"

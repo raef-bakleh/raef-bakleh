@@ -5,7 +5,6 @@ import Image from "next/image";
 
 import SQL from "../../pages/img/SQL.png";
 import PLSQL from "../../pages/img/PLSQL.png";
-
 function EduSk(props) {
   const [education, seteEducation] = useState(false);
   const [skills, setSkills] = useState(true);
@@ -26,7 +25,6 @@ function EduSk(props) {
     setSkills(false);
     seteEducation(false);
   };
-  console.log(props.language);
   return (
     <div>
       {props.language && (
