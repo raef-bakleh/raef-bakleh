@@ -61,7 +61,7 @@ function Portfolio(props) {
               slidesPerView={width > 800 ? 3 : 1}
               loop={true}
               autoplay={{
-                delay: 1000,
+                delay: 800,
                 pauseOnMouseEnter: "true",
               }}
               draggable={true}
