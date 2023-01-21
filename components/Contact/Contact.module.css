@@ -243,6 +243,7 @@
     top: -315px;
   }
   .send {
+    cursor: pointer;
     width: 100%;
     height: 50px;
     color: rgba(255, 255, 255, 0.5);
