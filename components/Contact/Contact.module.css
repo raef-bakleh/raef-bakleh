@@ -252,6 +252,7 @@
     margin-bottom: 20px;
   }
   .send:hover {
+    cursor: pointer;
     color: #96754e;
     border: 1px solid #96754e;
   }
