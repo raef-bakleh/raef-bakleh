@@ -344,7 +344,6 @@ function EduSk(props) {
                   <div className={classes.educationElement}>
                     <h3>Ludwig Maximilians Universität (2018-today)</h3>
                     <h1 className={classes.titel}>
-                      {" "}
                       Informatik Plus Computer Linguistik
                     </h1>
                   </div>

@@ -250,15 +250,15 @@ function Portfolio(props) {
 
           <div className={classes.swiper}>
             <Swiper
-              tabIndex={0}
-              spaceBetween={30}
+              spaceBetween={20}
               className={classes.swiperContainer}
               slidesPerView={width > 800 ? 3 : 1}
               loop={true}
               autoplay={{
-                delay: 5000,
-                disableOnInteraction: true,
+                delay: 800,
+                pauseOnMouseEnter: "true",
               }}
+              draggable={true}
               onSwiper={(s) => {
                 setSwiper(s);
               }}
@@ -292,7 +292,7 @@ function Portfolio(props) {
               <SwiperSlide className={classes.swiperSlide}>
                 <div className={classes.swiperProject}>
                   <Image
-                    src={Projekt4}
+                    src={Projekt2}
                     className={classes.projectPhoto}
                   ></Image>
                   <p className={classes.projektName}>Expanses Manager</p>
@@ -317,16 +317,87 @@ function Portfolio(props) {
 
               <SwiperSlide className={classes.swiperSlide}>
                 <div className={classes.swiperProject}>
+                  <Image
+                    src={Projekt3}
+                    className={classes.projectPhoto}
+                  ></Image>
+                  <p className={classes.projektName}>
+                    Functional Langauge implementation
+                  </p>
+                  <div className={classes.projektOverlayImage}>
+                    <Link
+                      className={classes.link}
+                      href="https://github.com/raef-bakleh/Academic-Project/tree/main/sep-impl-team-7-main"
+                      target={"_blank"}
+                    >
+                      <p className={classes.projektOverlayP}>github</p>
+                    </Link>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className={classes.swiperSlide}>
+                <div className={classes.swiperProject}>
+                  <Image
+                    src={Projekt5}
+                    className={classes.projectPhoto}
+                  ></Image>
+                  <p className={classes.projektName}>eCommerce Website</p>
+                  <div className={classes.projektOverlayImage}>
+                    <Link
+                      className={classes.link}
+                      href="https://e-commerce-website-lyart-zeta.vercel.app/"
+                      target={"_blank"}
+                    >
+                      <p className={classes.projektOverlayP}>Demo</p>
+                    </Link>
+                    <Link
+                      className={classes.link}
+                      href="https://github.com/raef-bakleh/eCommerce-Website"
+                      target={"_blank"}
+                    >
+                      <p className={classes.projektOverlayP}>github</p>
+                    </Link>
+                  </div>
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide className={classes.swiperSlide}>
+                <div className={classes.swiperProject}>
                   <Image src={inCon} className={classes.projectGif}></Image>
                   <p className={classes.projektName}>Car Sharing Website</p>
                 </div>
               </SwiperSlide>
               <SwiperSlide className={classes.swiperSlide}>
                 <div className={classes.swiperProject}>
+                  <Image
+                    src={Projekt4}
+                    className={classes.projectPhoto}
+                  ></Image>
+                  <p className={classes.projektName}>Contacts Manager</p>
+                  <div className={classes.projektOverlayImage}>
+                    <Link
+                      className={classes.link}
+                      href="https://contacts-manager-six.vercel.app"
+                      target={"_blank"}
+                    >
+                      <p className={classes.projektOverlayP}>Demo</p>
+                    </Link>
+                    <Link
+                      className={classes.link}
+                      href="https://github.com/raef-bakleh/contacts-manager"
+                      target={"_blank"}
+                    >
+                      <p className={classes.projektOverlayP}>github</p>
+                    </Link>
+                  </div>
+                </div>
+              </SwiperSlide>
+              {/* <SwiperSlide className={classes.swiperSlide}>
+                <div className={classes.swiperProject}>
                   <Image src={inCon} className={classes.projectGif}></Image>
                   <p className={classes.projektName}>Live Chat App</p>
                 </div>
-              </SwiperSlide>
+              </SwiperSlide> */}
               {/*  <SwiperSlide className={classes.swiperSlide}>
             <div className={classes.swiperProject}>
               <Image src={Projekt1} className={classes.projectPhoto}></Image>
