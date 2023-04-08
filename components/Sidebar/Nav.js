@@ -72,7 +72,7 @@ function Nav({ setNav, nav, language }) {
                   </div>
                 </Link>
                 <Link
-                  href={"https://www.linkedin.com/in/raef-bakleh-021293230/"}
+                  href={"https://www.linkedin.com/in/raef-bakleh/"}
                   target="_blank"
                 >
                   <div className={classes.socialIconLinkedIn}>
@@ -154,7 +154,7 @@ function Nav({ setNav, nav, language }) {
                   </div>
                 </Link>
                 <Link
-                  href={"https://www.linkedin.com/in/raef-bakleh-021293230/"}
+                  href={"https://www.linkedin.com/in/raef-bakleh/"}
                   target="_blank"
                 >
                   <div className={classes.socialIconLinkedIn}>
