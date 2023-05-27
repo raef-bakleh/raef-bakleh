@@ -102,7 +102,7 @@ function AboutMe(props) {
               <div className={classes.aboutRight}>
                 <div className={classes.cvDownload}>
                   <a
-                    href="https://firebasestorage.googleapis.com/v0/b/portfolio-2d617.appspot.com/o/Lebenslauf.pdf?alt=media&token=87906aa0-65f4-4f23-b256-4a6ab89bb4dd"
+                    href="https://firebasestorage.googleapis.com/v0/b/portfolio-2d617.appspot.com/o/Lebenslauf_aktuell.pdf?alt=media&token=a401ce2a-aef5-462f-a7b0-b66a33f9b9a6"
                     target="_blank"
                     download
                   >
